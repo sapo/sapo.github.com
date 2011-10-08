@@ -1,8 +1,8 @@
 var navitems=[
 {'link':'/','name':'Home'},
 {'link':'/broker.html','name':'Broker'},
-{'link':'javascript:alert(\'soon\')','name':'LibSAPOjs'},
-{'link':'javascript:alert(\'soon\')','name':'Messenger for Mac'}
+{'link':'/messengermac.html','name':'Messenger for Mac'},
+{'link':'javascript:alert(\'soon\')','name':'LibSAPOjs'}
 ];
 
 var sidebar=[
