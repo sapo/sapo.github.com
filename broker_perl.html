@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Broker, Perl client</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="prettify/prettify.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container-fluid">
+          <a class="brand" style="background-image:url('imgs/sapooss.png');width:100px;background-position:center;height:20px;background-repeat:no-repeat;" href="/"></a>
+          <ul class="nav">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="sidebar">
+        <div class="well">
+        </div>
+      </div>
+      <div class="content">
+
+<h1>SAPO Broker, Perl client</h1>
+
+<h2>Installing from source</h2>
+
+<p>
+The simplest way is to checkout the most recent code from the svn repository
+</p>
+
+<p>
+<pre class="prettyprint">git clone git@github.com:sapo/sapo-broker.git
+cd sapo-broker/clients/perl-component
+</pre>
+</p>
+
+<p>
+and then just build it.
+</p>
+
+<pre class="prettyprint">cd perl-component && perl Makefile.PL
+</pre>
+
+<p>Now answer the questions (you must select at least one of thrift or protobuf codecs, otherwise the makefile won't be written).</p>
+
+<p>Finally just make and install</p>
+
+<pre class="prettyprint">make install
+</pre>
+
+<h2>Dependencies</h2>
+
+<h3>Thrift</h3>
+
+<p>
+If you chose to install  thrift support then you will need to install it. To do so you should get the  latest release version and just install the perl module.
+</p>
+
+<p>The build process should be similar to:</p>
+
+<pre class="prettyprint">wget 'http://www.apache.org/dist//incubator/thrift/XXX-incubating/thrift-XXX.tar.gz'
+
+tar -xzf thrift-XXX.tar.gz 
+cd thrift-XXX/lib/perl/
+perl Makefile.PL
+#you may need to install dependencies from CPAN
+make
+sudo make install
+</pre>
+
+<h3>Protobuf</h3>
+
+<p>
+If you chose to install  protobuf support then you will need to install the protobuf development libraries. Most distributions will have these packages but in case your's doesn't you can always  compile and install them from source.
+</p>
+
+<pre class="prettyprint">wget http://protobuf.googlecode.com/files/protobuf-XXX.tar.bz2
+tar -xjf protobuf-XXX.tar.bz2
+cd protobuf-XXX
+./configure
+make
+sudo make install
+</pre>
+
+<h2>Testing</h2>
+
+<p>
+The build process also runs the tests. By default tests connect to the broker in localhost. You can change this for a broker server running in another host by setting the environment variable BROKER_HOST.
+</p>
+
+<p>
+If the test broker doesn't have SSL support you should define BROKER_DISABLE_SSL to 1.
+</p>
+
+<h2>Usage</h2>
+
+<p>
+Example usage files can be found in the repository.
+</p>
+
+<h3>Simplest Usage</h3>
+
+<p>
+The simples production code is:
+</p>
+
+<pre class="prettyprint">use SAPO::Broker::Clients::Simple;
+        
+use strict;
+use warnings;
+        
+my $broker = SAPO::Broker::Clients::Simple->new(host=>'localhost', proto=>'tcp'); #connects to localhost using tcp by default (can also use udp or ssl)
+
+my %options = (
+        'destination_type' => 'QUEUE', #can also be TOPIC
+        'destination' => '/tests/perl',
+);
+
+#to produce
+$broker->publish(%options, 'payload' => "This is the payload");
+
+#to consume
+$broker->subscribe(%options, auto_acknowledge => 1); #auto_acknowledge makes life simpler
+my $notification = $broker->receive;
+my $payload = $notification->message->payload;
+</pre>
+
+<h3>Old Perl Client Class</h3>
+
+<p>
+The SAPO::Broker class abstracts all the low-level complexity of the SAPO Broker and gives the developer a simple to use high-level API to build event consumers and producers.
+</p>
+
+<p>
+A very simple producer/consumer can look like this:
+</p>
+
+<pre class="prettyprint">use SAPO::Broker;
+
+           my $topic = "/test";
+
+           my $broker = SAPO::Broker->new(
+               host=> '127.0.0.1',
+           );
+
+           die "Cant connect? CAUSE: $@\n" unless $broker;
+
+           print "SUBSCRIBING...\n";
+           $broker->subscribe(
+               topic   => $topic,
+           );
+
+           print "PUBLISHING...\n";
+           $broker->publish(
+               topic   => $topic,
+               payload => 'TAU TAU',
+           );
+
+           print "RECEIVING...\n";
+           while (1) {
+               my $payload = $broker->receive;
+
+               print "Message received: ", $payload, "\n";
+           }
+</pre>
+
+        <footer>
+          <p>&copy; SAPO, Serviço de Apontadores Portugueses 2011</p>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
