@@ -1,7 +1,8 @@
+/* TODO: These need submenus that match the headings on each section */
 var navitems=[
-{'link':'/','name':'Home'},
+{'link':'/','name':'Main'},
 {'link':'/broker.html','name':'Broker'},
-{'link':'/messengermac.html','name':'Messenger for Mac'},
+{'link':'/messengermac.html','name':'Messenger'},
 {'link':'javascript:alert(\'soon\')','name':'LibSAPOjs'}
 ];
 
