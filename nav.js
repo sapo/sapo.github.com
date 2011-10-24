@@ -1,4 +1,4 @@
-/* TODO: These need submenus that match the headings on each section */
+/* TODO: These need submenus that match the headings on each section. Also, the JS needs to be fixed so that we can test this locally. */
 var navitems=[
 {'link':'/','name':'Main'},
 {'link':'/broker.html','name':'Broker'},
