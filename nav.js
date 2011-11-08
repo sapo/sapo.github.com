@@ -2,8 +2,13 @@
 var navitems=[
 {'link':'/','name':'Main'},
 {'link':'/broker.html','name':'Broker'},
+<<<<<<< HEAD
 {'link':'/messengermac.html','name':'Messenger'},
 {'link':'javascript:alert(\'soon\')','name':'LibSAPOjs'}
+=======
+{'link':'/messengermac.html','name':'Messenger for Mac'},
+{'link':'http://js.sapo.pt/SAPO/doc.html','name':'LibSAPOjs'}
+>>>>>>> 5a774d134c4a2d96268206a13c0823f6f99d9fe1
 ];
 
 var sidebar=[
