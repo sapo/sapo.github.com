@@ -26,8 +26,20 @@
     <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-touch-icon-114x114.png">
     <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
     <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/showdown.js"></script>
     <script type="text/javascript" src="prettify/prettify.js"></script>
-    <script type="text/javascript" src="nav.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           var showdown = new Showdown.converter();
+           console.log($("#content").attr('src'));
+           var xhr = $.get($("#content").attr('src'), function(data) { 
+               $("#content").html(showdown.makeHtml(data));
+           }); 
+           prettyPrint();
+        });
+        window.onload = function() { prettyPrint(); }
+    </script>
   </head>
 
   <body>
@@ -38,7 +50,7 @@
           <a class="brand" href="index.html"><img src="imgs/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;"> Opensource at SAPO</a>
           <ul class="nav">
             <li class="active"><a href="broker.html">Broker</a></li>
-            <li><a href="#">LibSAPO.js</a></li>
+            <li><a href="libsapojs.html">LibSAPO.js</a></li>
             <li><a href="messengermac.html">Messenger</a></li>
             <li><a href="http://codebits.eu">Codebits</a></li>
             <li><a href="http://labs.sapo.pt">Labs</a></li>
@@ -64,55 +76,11 @@
         </div>
       </div>
       <div class="content">
-<div class="page-header">
-<h1>SAPO Broker</h1>
-</div>
-
-<h2>What is it?</h2>
-
-<p>
-SAPO Broker is a distributed messaging framework. Among other features, it provides minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.
-</p>
-<p>
-SAPO Broker is written in  Java, but has client libraries for <a href="broker_perl.html">Perl</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/python-component">Python</a>, <a href="broker_php.html">PHP</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/dotnet-component">.NET</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/c-component">C</a> and <a href="https://github.com/sapo/sapo-broker/tree/master/clients">others</a>, and you can talk to it using Thrift, XML or JSON.
-<!-- TODO: add links to docs -->
-</p>
-<p>
-To start using the broker take a look at the Quick Start tutorial, and then please read the  User Guide for more in depth information.
-</p>
-<!-- TODO: add reference to public broker -->
-<p>
-You can access our public broker server at <code>broker.labs.sapo.pt</code> and subscribe to a number of public topics to experiment with.
-</p>
-
-<h2>How do I get started?</h2>
-
-<p>
-Download the latest distribution bundle and read the Quick Start. To learn more about the design and concepts of SAPO Broker read the  User Guide.
-</p>
-<!-- TODO: plain HTML versions of these. -->
-<p>
-You can fetch the latest version of the SAPO Broker source code from our Git repo. For checking out the code use the <code>git</code> command line client as follows:
-</p>
-
-<p>
-<pre class="prettyprint">git clone git@github.com:sapo/sapo-broker.git
-</pre>
-</p>
-
-<h2>License</h2>
-<p>
-The core SAPO Broker source is distributed under the <a href="https://github.com/sapo/sapo-broker/blob/master/license/LICENSE.txt">BSD license</a>. Some dependencies or extensions are under <a href="https://github.com/sapo/sapo-broker/tree/master/license">separate licensing</a>.
-</p>
-
-<h2>How to get involved</h2>
-<p>
-Go ahead and <a href="https://github.com/sapo/sapo-broker">fork</a> the project or subscribe to the <a href="http://listas.softwarelivre.SAPO.pt/mailman/listinfo/broker">mailing-list</a>.
-</p>
-
-            <footer>
+         <section id="content" src="src/broker.markdown">
+         </section>
+        <footer>
         <div class="well">
-          <p align="middle">&copy; <a href="http://www.sapo.pt">SAPO</a>, Serviço de Apontadores Portugueses 2011</p>
+          <p align="middle">&copy; <a href="http://www.sapo.pt">SAPO</a>, Servi&ccedil;o de Apontadores Portugueses 2011</p>
         </div>
         </footer>
       </div>

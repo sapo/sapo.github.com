@@ -1,0 +1,20 @@
+# LibSAPO.js
+<div class="page-header"></div>
+
+## What is it?
+
+LibSAPO.js is a set of Javascript classes used at [SAPO][s] to support our next generation of rich interface experience websites and services.
+
+## How do I get started?
+
+You can have a look at the [documentation][doc] or check our (bilingual) [guides and tutorials][g].
+
+## How to get involved
+
+Keep an eye on our [blog][b] (in Portuguese) and our [Twitter account][t] where we post a number of announcements and pointers to useful resources.
+
+[s]: http://www.sapo.pt
+[b]: http://libsapojs.blogs.sapo.pt/
+[doc]: http://js.sapo.pt/SAPO/doc.html
+[t]: http://twitter.com/libsapojs
+[g]: http://softwarelivre.sapo.pt/projects/libsapojs/wiki/Contents/LibSAPOjs
