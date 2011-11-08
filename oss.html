@@ -34,9 +34,9 @@
            var converter = new Showdown.converter();
            var xhr = $.get('test.markdown', function(data) { 
                $("#content").text(converter.makeHtml(data));
+               prettyPrint();
            }); 
        });
-       window.onload = function() { prettyPrint(); }
     </script>
   </head>
 

@@ -35,9 +35,10 @@
            console.log($("#content").attr('src'));
            var xhr = $.get($("#content").attr('src'), function(data) { 
                $("#content").html(showdown.makeHtml(data));
-               prettyPrint();
            }); 
+           prettyPrint();
         });
+        window.onload = function() { prettyPrint(); }
     </script>
   </head>
 
@@ -47,8 +48,8 @@
                 <div class="container-fluid">
           <a class="brand" href="index.html"><img src="imgs/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;"> Opensource at SAPO</a>
           <ul class="nav">
-            <li class="active"><a href="broker.html">Broker</a></li>
-            <li><a href="libsapojs.html">LibSAPO.js</a></li>
+            <li><a href="broker.html">Broker</a></li>
+            <li class="active"><a href="#">LibSAPO.js</a></li>
             <li><a href="messengermac.html">Messenger</a></li>
             <li><a href="http://codebits.eu">Codebits</a></li>
             <li><a href="http://labs.sapo.pt">Labs</a></li>
@@ -61,19 +62,20 @@
       </div>
     </div>
 
+
     <div class="container-fluid">
       <div class="sidebar">
         <div class="well">
-        <img align="middle" src="imgs/broker512.png" style="width: 180px; height; auto;">
-        <p align="middle"><span class="label success">v.4.0.29</span></p>
+        <img align="middle" src="imgs/libsapojs512.png" style="width: 180px; height; auto;">
+        <p align="middle"><span class="label warning">100+ modules</span></p>
         <ul class="unstyled">
-          <li><a href="https://github.com/sapo/sapo-broker">Fork on Github</a></li>
-          <li><a href="http://listas.softwarelivre.sapo.pt/mailman/listinfo/broker">Mailing-List</a></li>
+          <li><a href="http://js.sapo.pt/SAPO/doc.html">Documentation</a></li>
+          <li><a href="http://softwarelivre.sapo.pt/projects/libsapojs/wiki/Contents/LibSAPOjs">Guides</a></li>
         </ul>
         </div>
       </div>
       <div class="content">
-         <section id="content" src="src/broker.markdown">
+         <section id="content" src="src/libsapojs.markdown">
          </section>
         <footer>
         <div class="well">

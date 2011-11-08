@@ -35,10 +35,9 @@
            console.log($("#content").attr('src'));
            var xhr = $.get($("#content").attr('src'), function(data) { 
                $("#content").html(showdown.makeHtml(data));
+               prettyPrint();
            }); 
-           prettyPrint();
         });
-        window.onload = function() { prettyPrint(); }
     </script>
   </head>
 
@@ -50,7 +49,7 @@
           <a class="brand" href="index.html"><img src="imgs/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;"> Opensource at SAPO</a>
           <ul class="nav">
             <li><a href="broker.html">Broker</a></li>
-            <li><a href="#">LibSAPO.js</a></li>
+            <li><a href="libsapojs.html">LibSAPO.js</a></li>
             <li class="active"><a href="messengermac.html">Messenger</a></li>
             <li><a href="http://codebits.eu">Codebits</a></li>
             <li><a href="http://labs.sapo.pt">Labs</a></li>
