@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Opensource at SAPO</title>
     <!-- TODO: fill in the meta tags -->
     <meta name="description" content="">
@@ -22,10 +23,10 @@
 
     <!-- Le fav and touch icons -->
     <!-- TODO: create these and make the links point to the right place -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-touch-icon-114x114.png">
     <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
     <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="prettify/prettify.js"></script>
@@ -36,10 +37,18 @@
 
     <div class="topbar">
       <div class="topbar-inner">
-        <div class="container-fluid">
-          <!-- TODO: cleanup the logo and remove inline styling -->
-          <a class="brand" style="background-image:url('imgs/sapooss.png');width:100px;background-position:center;height:20px;background-repeat:no-repeat;" href="/"></a>
+                <div class="container-fluid">
+          <a class="brand" href="/"><img src="imgs/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;"> Opensource at SAPO</a>
           <ul class="nav">
+            <li><a href="broker.html">Broker</a></li>
+            <li><a href="#">LibSAPO.js</a></li>
+            <li><a href="messengermac.html">Messenger</a></li>
+            <li><a href="http://codebits.eu">Codebits</a></li>
+            <li><a href="http://labs.sapo.pt">Labs</a></li>
+            <li><a href="http://sdb.sapo.pt">Services</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="oss.html">About</a></li>
           </ul>
         </div>
       </div>
@@ -52,13 +61,15 @@
             <img src="imgs/greencubes512.png" style="float: left; width: 200px; height: auto; padding: 1em; margin-left: -3em;margin-top: -3em;">
           <div>
           <h1>Opensource at SAPO</h1>
-          <p>Our official entry point for our OSS projects and initiatives.</p>
-	  </p>
-          <p><a class="btn large success" href="oss.html">Learn More &raquo;</a></p>
+          <p>Thinking out of the box, and tools for all kinds of boxes.</p>
+	        <p><a class="btn large success" href="oss.html">Learn More &raquo;</a></p>
           </div>
         </div>
 
         <!-- Columns -->
+        <div class="page-header">
+        <h1>Projects</h1>
+        </div>
         <div class="row">
           <div class="span-one-third row">
             <div class="span2">
@@ -68,14 +79,14 @@
             </div>
             <div class="span3">
             <h2>SAPO Broker</h2>
-            <p>SAPO Broker is a high-performance distributed messaging framework with minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions. Client libraries are available for Perl, Python, PHP, .NET and C (among others).</p>
+            <p>SAPO Broker is a high-performance distributed messaging framework with minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.</p>
             </div>
           </div>
           <div class="span-one-third row">
             <div class="span2">
             <img align="middle" src="imgs/libsapojs512.png" style="width: 100px; height; auto;">
             <p align="middle"><span class="label warning">100+ modules</span></p>
-            <p align="middle"><a class="btn small success" href="#">Learn more &raquo;</a></p>
+            <p align="middle"><a class="btn small success" href="http://js.sapo.pt/SAPO/doc.html">Learn more &raquo;</a></p>
             </div>
             <div class="span3">
             <h2>LibSAPO.js</h2>
@@ -86,7 +97,7 @@
             <div class="span2">
             <img align="middle" src="imgs/sapo512.png" style="width: 100px; height; auto;">
             <p align="middle"><span class="label notice"><a style="color: white;" href="http://itunes.apple.com/pt/app/sapo-messenger/id438217935?mt=12">App Store</a></span></p>
-            <p align="middle"><a class="btn small success" href="#">Learn more &raquo;</a></p>
+            <p align="middle"><a class="btn small success" href="messengermac.html">Learn more &raquo;</a></p>
             </div>
             <div class="span3">
             <h2>Messenger for Mac</h2>
@@ -95,11 +106,50 @@
           </div>
         </div>
 
-        <footer>
-                <!-- TODO: these other links (set by JS) need to be moved to a fat footer -->
-        <div class="well">
+<div class="page-header">
+  <h1>Initiatives</h1>
+</div>
+
+        <div class="row">
+          <div class="span-one-third row">
+            <div class="span2">
+            <img align="middle" src="imgs/bot512.png" style="width: 100px; height; auto; clear: both; margin-bottom: 0.5em;">
+            <p align="middle"><span class="label success">over 800 served</span></p>
+            <p align="middle"><a class="btn small success" href="http://codebits.eu">Learn more &raquo;</a></p>
+            </div>
+            <div class="span3">
+            <h2>Codebits</h2>
+            <p>SAPO Codebits is our yearly event, where 800 hand-picked participants get to compete in a 3-day programming contest, attend talks, and push the envelope in technology, design, and creativity.</p>
+            </div>
+          </div>
+          <div class="span-one-third row">
+            <div class="span2">
+            <img align="middle" src="imgs/labs400.png" style="width: 100px; height; auto;">
+            <p align="middle"><span class="label">spawning</span></p>
+            <p align="middle"><a class="btn small success" href="http://labs.sapo.pt">Learn more &raquo;</a></p>
+            </div>
+            <div class="span3">
+            <h2>SAPO Labs</h2>
+             <p>Our partnership with leading Portuguese universities, nursing new concepts until they are ready to go out into the world - where academic brilliance meets cutting-edge technology, </p>
+            </div>
+         </div>
+          <div class="span-one-third row">
+            <div class="span2">
+            <img align="middle" src="imgs/sdb512.png" style="width: 100px; height; auto; padding-bottom: 0.2em;">
+            <p align="middle"><span class="label notice">our boxes open</span></p>
+            <p align="middle"><a class="btn small success" href="http://sdb.sapo.pp">Learn more &raquo;</a></p>
+            </div>
+            <div class="span3">
+            <h2>Services</h2>
+            <p>Our <a href="http://services.sapo.pt/Metadata/Home?culture=EN">comprehensive web service catalog</a> allows anyone to easily create rich web applications that leverage the same APIs we use for developing our own services, the platform that supports it is going commercial.</p>
+            </div>
+          </div>
         </div>
-          <p>&copy; SAPO, Serviço de Apontadores Portugueses 2011</p>
+
+        <footer class="masthead">
+        <div class="well">
+          <p align="middle">&copy; <a href="http://www.sapo.pt">SAPO</a>, Serviço de Apontadores Portugueses 2011</p>
+        </div>
         </footer>
       </div>
     </div>

@@ -20,31 +20,46 @@
     </style>
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-touch-icon-114x114.png">
     <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
     <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="prettify/prettify.js"></script>
-    <script type="text/javascript" src="nav.js"></script>
   </head>
 
   <body>
 
     <div class="topbar">
       <div class="topbar-inner">
-        <div class="container-fluid">
-          <a class="brand" style="background-image:url('imgs/SAPOoss.png');width:100px;background-position:center;height:20px;background-repeat:no-repeat;" href="/"></a>
+                <div class="container-fluid">
+          <a class="brand" href="index.html"><img src="imgs/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;"> Opensource at SAPO</a>
           <ul class="nav">
+            <li class="active"><a href="broker.html">Broker</a></li>
+            <li><a href="#">LibSAPO.js</a></li>
+            <li><a href="messengermac.html">Messenger</a></li>
+            <li><a href="http://codebits.eu">Codebits</a></li>
+            <li><a href="http://labs.sapo.pt">Labs</a></li>
+            <li><a href="http://sdb.sapo.pt">Services</a></li>
+          </ul>
+          <ul class="secondary-nav">
+            <li><a href="oss.html">About</a></li>
           </ul>
         </div>
       </div>
     </div>
 
+
     <div class="container-fluid">
       <div class="sidebar">
         <div class="well">
+        <img align="middle" src="imgs/broker512.png" style="width: 180px; height; auto;">
+        <p align="middle"><span class="label success">v.4.0.29</span></p>
+        <ul class="unstyled">
+          <li><a href="https://github.com/sapo/sapo-broker">Fork on Github</a></li>
+          <li><a href="http://listas.softwarelivre.sapo.pt/mailman/listinfo/broker">Mailing-List</a></li>
+        </ul>
         </div>
       </div>
       <div class="content">
@@ -57,7 +72,7 @@
 SAPO Broker is a distributed messaging framework. Among other features, it provides minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.
 </p>
 <p>
-SAPO Broker is written in  Java, but has client libraries for <a href="broker_perl.html">Perl</a>, <a href="https://github.com/SAPO/SAPO Broker/tree/master/clients/python-component">Python</a>, <a href="broker_php.html">PHP</a>, <a href="https://github.com/SAPO/SAPO Broker/tree/master/clients/dotnet-component">.NET</a>, <a href="https://github.com/SAPO/SAPO Broker/tree/master/clients/c-component">C</a> and <a href="https://github.com/SAPO/SAPO Broker/tree/master/clients">others</a>, and you can talk to it using Thrift, XML or JSON.
+SAPO Broker is written in  Java, but has client libraries for <a href="broker_perl.html">Perl</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/python-component">Python</a>, <a href="broker_php.html">PHP</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/dotnet-component">.NET</a>, <a href="https://github.com/sapo/sapo-broker/tree/master/clients/c-component">C</a> and <a href="https://github.com/sapo/sapo-broker/tree/master/clients">others</a>, and you can talk to it using Thrift, XML or JSON.
 <!-- TODO: add links to docs -->
 </p>
 <p>
@@ -85,7 +100,7 @@ You can fetch the latest version of the SAPO Broker source code from our Git rep
 
 <h2>License</h2>
 <p>
-The core SAPO Broker source is distributed under the <a href="https://github.com/SAPO/SAPO Broker/blob/master/license/LICENSE.txt">BSD license</a>. Some dependencies or extensions are under <a href="https://github.com/sapo/sapo-broker/tree/master/license">separate licensing</a>.
+The core SAPO Broker source is distributed under the <a href="https://github.com/sapo/sapo-broker/blob/master/license/LICENSE.txt">BSD license</a>. Some dependencies or extensions are under <a href="https://github.com/sapo/sapo-broker/tree/master/license">separate licensing</a>.
 </p>
 
 <h2>How to get involved</h2>
