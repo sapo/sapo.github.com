@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-  <li><a href="#!broker"><span class="brand">sapo</span> Broker</a> <span class="divider">/</span></li>
+  <li><a href="#!broker"><span class="podium">sapo</span> Broker</a> <span class="divider">/</span></li>
   <li>PHP Client</li>
 </ul>
 
