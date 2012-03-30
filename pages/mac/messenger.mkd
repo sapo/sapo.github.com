@@ -1,4 +1,4 @@
-# sapo Messenger for Mac #
+# <span class="podium">sapo</sapo> Messenger for Mac #
 
 <div class="page-header"></div>
 
