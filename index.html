@@ -30,12 +30,19 @@
       p.floaty {
           margin-left: 1.8em;
       }
+      img.flag {
+          padding-top: 0.8em;
+          height: 32px; width: auto; opacity: 0.5;
+      }
+      .active img.flag {
+          opacity: 1.0;
+      }
     </style>
 <!-- Le fav and touch icons -->
-<link rel="shortcut icon" href="imgs/favicon.ico" />
-<link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-touch-icon-114x114.png" />
+<link rel="shortcut icon" href="pages/img/favicon.ico" />
+<link rel="apple-touch-icon" href="pages/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="pages/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="pages/img/apple-touch-icon-114x114.png" />
 <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
 <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/spin-min.js"></script>
@@ -50,27 +57,29 @@
 <div class="topbar">
 <div class="topbar-inner">
 <div class="container-fluid">
-<a class="brand" href="#!index"><img src="img/sapo30.png" style="margin-bottom: -0.4em; margin-top: -0.5em;" /> Open Source at sapo</a>
+<a class="brand" href="#!index"><img src="img/sapo30.png" style="height: 30px; width: 37px; margin-bottom: -0.4em; margin-top: -0.5em;" /> Open Source at <b>sapo</b></a>
 <ul id="mainnav" class="nav"></ul>
 <ul class="secondary-nav">
-<li><a href="pages/about.mkd" template="article">About</a></li>
+<li><a href="#!about" template="article">About</a></li>
 </ul>
 </div>
 </div>
 </div>
 <div id="container">
-<div class="hero-unit" style="min-height: 400px;">
 <div id="jswarn">
+<div class="hero-unit" style="min-height: 400px;">
 <p>Due to the way we integrate with Github page hosting, viewing this site requires you to have JavaScript enabled in your browser. We apologize for any inconvenience.</p>
 <p>If you are using Internet Explorer 6 or 7, <a href="http://www.ie6countdown.com/">please upgrade</a>.</p>
+</div>
 </div>
 <script type="text/javascript">
         // Worst case scenario - sitemap and content didn't load yet, but we have JS support. 
         document.getElementById('jswarn').style.display='none';
+        document.getElementById('fallback').style.display='block';
         // Entertain the user a bit.
         var spinner = new Spinner().spin(document.getElementById('container'));
         </script>
 </div>
-</div>
+
 </body>
 </html>
