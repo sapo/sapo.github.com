@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Open Source at SAPO</title>
+    <meta name="description" content="SAPO.pt's Open Source web site">
+    <meta name="author" content="Rui Carmo">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body, section {
+        padding-top: 60px;
+      }
+      .container > h1 {
+        padding-top: 1em;
+        clear: both;
+      }
+      .tiny {
+          padding: 2px 5px 2px 5px;
+          font-size: 11px;
+      }
+      a.floaty {
+          float: left;
+      }
+      p.floaty {
+          margin-left: 1.8em;
+      }
+      img.flag {
+          padding-top: 0.8em;
+          height: 32px; width: auto; opacity: 0.5;
+      }
+      .active img.flag {
+          opacity: 1.0;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="pages/img/favicon.ico">
+    <link rel="apple-touch-icon" href="pages/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="pages/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="pages/img/apple-touch-icon-114x114.png">
+    <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="prettify/desert.css" type="text/css" rel="stylesheet" />
+    <script minify="yes" type="text/javascript" src="js/spin.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/marked.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/underscore.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/backbone.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/prettify.js"></script>
+    <script bundle="yes" type="text/javascript" src="js/main.js"></script>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+                <div class="container-fluid">
+          <a class="brand" href="#!index"><img src="img/sapo30.png" style="height: 30px; width: 37px; margin-bottom: -0.4em; margin-top: -0.5em;"> Open Source at SAPO</a>
+          <ul id="mainnav" class="nav"></ul>
+          <ul class="secondary-nav">
+            <li><a href="#!about" template="article">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="container">
+        <div id="jswarn">
+          <div class="hero-unit" style="min-height: 400px;">
+          <p>Due to the way we integrate with Github page hosting, viewing this site requires you to have JavaScript enabled in your browser. We apologize for any inconvenience.</p>
+          <p>If you are using Internet Explorer 6 or 7, <a href="http://www.ie6countdown.com/">please upgrade</a>.</p>
+          </div>
+        </div>
+        <script type="text/javascript">
+        // Worst case scenario - sitemap and content didn't load yet, but we have JS support. 
+        document.getElementById('jswarn').style.display='none';
+        document.getElementById('fallback').style.display='block';
+        // Entertain the user a bit.
+        var spinner = new Spinner().spin(document.getElementById('container'));
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
