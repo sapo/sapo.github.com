@@ -1,7 +1,0 @@
-Some notes about the website
-
-- nav.js provides the list of links and topics for the navigation and side bars.
-
-- We use Twitter's bootstrap toolkit for now. More info at http://twitter.github.com/bootstrap/
-
-- We also use Google's prettify. More info at http://code.google.com/p/google-code-prettify/
