@@ -1,11 +1,10 @@
 # LibSAPO.js #
 
-
 <div class="page-header"></div>
 
 ## What is it?
 
-LibSAPO.js is a set of Javascript classes used at [SAPO][s] to support our next generation of rich interface experience websites and services.
+LibSAPO.js is a set of Javascript classes used at <span class="podium">sapo</span> to support our next generation of rich interface experience websites and services.
 
 ## How do I get started?
 
