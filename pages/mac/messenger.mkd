@@ -1,4 +1,4 @@
-# SAPO Messenger for Mac #
+# sapo Messenger for Mac #
 
 <div class="page-header"></div>
 
@@ -6,8 +6,8 @@
 
 ## What is it?
 
-SAPO Messenger for Mac is a free Jabber/XMPP client for the Mac OS X platform,
-developed at [SAPO][s] and released under a GNU GPL2 license.
+**sapo** Messenger for Mac is a free Jabber/XMPP client for the Mac OS X platform,
+developed at **[sapo][s]** and released under a GNU GPL2 license.
 
 
 ## Features
@@ -22,7 +22,7 @@ Major features include:
   * Uniform roster across multiple accounts, with filtering search of contacts;
   * Message center to manage offline messages and headline-type messages;
   * Support for MSN transport on any account;
-  * SMS integration (requires SAPO account);
+  * SMS integration (requires **sapo** account);
   * Growl support;
   * Sparkle-based updates.
 
@@ -41,7 +41,7 @@ You clone the source here at github from our [official repository][2].
 
 You can follow the latest releases in two ways:
 
-Download the [latest nightly build of SAPO Messenger Mac][3]. It uses the
+Download the [latest nightly build of sapo Messenger Mac][3]. It uses the
 [Sparkle][4] framework to keep you up-to-date;
 
 subscribe to the [nightly builds feed][5] or select "Nightly Builds" in the
