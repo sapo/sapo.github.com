@@ -1,6 +1,6 @@
-# A brief history of Open Source software at *sapo* #
+# A brief history of Open Source software at <span class="podium">sapo</span> #
 
-*[sapo][s]* has an established Open Source tradition dating back to its origins in <a href="http://en.wikipedia.org/wiki/SAPO_(company)">1995</a>. All our critical infra-structure runs on Open Source software, and in the past 16 years we've contributed to Open Source in a number of ways, either by releasing our own code or by sponsoring a number of developments in projects we adopted.
+<span class="podium">sapo</span> has an established Open Source tradition dating back to its origins in <a href="http://en.wikipedia.org/wiki/SAPO_(company)">1995</a>. All our critical infra-structure runs on Open Source software, and in the past 16 years we've contributed to Open Source in a number of ways, either by releasing our own code or by sponsoring a number of developments in projects we adopted.
 
 Although it is impossible to keep tabs on all the various minor patches and contributions to everything, there are a few core projects that we've been involved with for a long time.
 
@@ -12,19 +12,19 @@ After using XMPP as the underpinnings of our IM service for a period of five yea
 
 <img src="img/psi128.png" style="width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;">
 
-The [Psi][p] project stood out as the most complete client-side framework available at the time, and *sapo* [sponsored its founder](http://listas.apesol.org/pipermail/delta-affinix.com/2005-February/000371.html), Justin Karneges, to continue developing and consolidating it.
+The [Psi][p] project stood out as the most complete client-side framework available at the time, and <span class="podium">sapo</span> [sponsored its founder](http://listas.apesol.org/pipermail/delta-affinix.com/2005-February/000371.html), Justin Karneges, to continue developing and consolidating it.
 
 <br clear="all">
 
 <img src="img/pymsnt128.png" style="width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;">
 
-As far as interconnection was concerned, the best available work at the time was being done in [PyMSNt][pm], a project headed by James Bunton, an Australian college student. With *sapo* sponsoring, [PyMSNt][pm] [gained avatar and file transfer support](http://delx.net.au/projects/pymsnt/news.html), allowing for easier and friendlier inter-operability between native XMPP clients and MSN.
+As far as interconnection was concerned, the best available work at the time was being done in [PyMSNt][pm], a project headed by James Bunton, an Australian college student. With <span class="podium">sapo</span> sponsoring, [PyMSNt][pm] [gained avatar and file transfer support](http://delx.net.au/projects/pymsnt/news.html), allowing for easier and friendlier inter-operability between native XMPP clients and MSN.
 
 <br clear="all"/>
 
 # Bricolage <small>massive-scale content management</small>
 
-[Bricolage][b] is an open-source enterprise-class content management and publishing system that greatly simplifies creating, managing, and publishing the vast libraries of content available to *[sapo][s]*, and we adopted it as one of our CMS platforms from the very beginning - which meant both contributing to and sponsoring it in [a number of ways](http://comments.gmane.org/gmane.comp.db.postgresql.announce/156), such as:
+[Bricolage][b] is an open-source enterprise-class content management and publishing system that greatly simplifies creating, managing, and publishing the vast libraries of content available to <span class="podium">sapo</span>, and we adopted it as one of our CMS platforms from the very beginning - which meant both contributing to and sponsoring it in [a number of ways](http://comments.gmane.org/gmane.comp.db.postgresql.announce/156), such as:
 
 * A complete internationalization and localization implementation.
 * An overhaul of groups and permissions.
@@ -48,15 +48,15 @@ We adopted [Dovecot][d] as our IMAP and POP3 email server due to its excellent p
 
 [Horde][h] was the natural choice for our webmail front-ends, given its comprehensive suite of productivity, messaging, and project-management applications.
 
-[sapo][s] has been [sponsoring][h1] its development for [a number of years][h2], mainly where it concerns [IMP][imp] (for multiple-language, web-based access to e-mail) and [Kronolith][kr] (for calendaring and mobile syncing).
+<span class="podium">sapo</span> has been [sponsoring][h1] its development for [a number of years][h2], mainly where it concerns [IMP][imp] (for multiple-language, web-based access to e-mail) and [Kronolith][kr] (for calendaring and mobile syncing).
 
 # Shibboleth <small>keeping us safe</small>
 
 <img src="img/shibboleth128.png" style="width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;">
 
-[Shibboleth][sh] is one of the underpinnings of [sapo's][s] authentication and authorization infrastructure (both internal and [external][id]).
+[Shibboleth][sh] is one of the underpinnings of <span class="podium">sapo</span>'s authentication and authorization infrastructure (both internal and [external][id]).
 
-We contributed to the [Shibboleth][sh] SP by adding support for `memcached` session storage and `FastCGI`, which makes it easier for us to make available our [sapo ID][id] service to our entire network of partner sites.
+We contributed to the [Shibboleth][sh] SP by adding support for `memcached` session storage and `FastCGI`, which makes it easier for us to make available our <span class="podium">sapo</span> [ID][id] service to our entire network of partner sites.
 
 # Miscellaneous <small>odds and ends</small>
 
