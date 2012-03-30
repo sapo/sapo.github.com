@@ -7,7 +7,7 @@
 ## What is it?
 
 <span class="podium">sapo</span> Messenger for Mac is a free Jabber/XMPP client for the Mac OS X platform,
-developed at **[sapo][s]** and released under a GNU GPL2 license.
+developed at <span class="podium">sapo</span> and released under a GNU GPL2 license.
 
 
 ## Features
