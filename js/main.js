@@ -141,7 +141,7 @@ $(document).ready(function(){
 	});
 
 	// Fire up our app and pass in a sitemap
-	window.App = new site("Open Source at SAPO", "index.json");
+	window.App = new site("Open Source at sapo", "index.json");
 
     $('html').bind("mouseup", function() {
         $('.dropdown-toggle').parent('li').removeClass('open')

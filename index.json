@@ -5,7 +5,7 @@
         "menu": [
             {
                 "id": "broker",
-                "label": "SAPO Broker",
+                "label": "sapo broker",
                 "src":"pages/broker/index.mkd",
                 "sidebar": "pages/broker/sidebar.mkd",
                 "children": [
@@ -40,7 +40,7 @@
         "menu": [
             {
                 "id": "sapo-connect",
-                "label": "SAPO Connect",
+                "label": "sapo connect",
                 "src": "sapo-connect/index.html"
             }
         ]
