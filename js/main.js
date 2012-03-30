@@ -5,7 +5,8 @@ function buildnav(pages, el, m, visible) {
     // TODO: change this back to .each() later when I don't need to inspect the object
     for(i in m) {
         if(m[i].menu) {
-            var sub = $(el).append('<li class="dropdown"><a href="#" class="dropdown-toggle">' + m[i].label + '</a></li>').children().last();
+            var regex = new RegExp("sapo ", "g");
+            var sub = $(el).append('<li class="dropdown"><a href="#" class="dropdown-toggle">' + m[i].label.replace(regex, '<span class="podium">sapo</span> ') + '</a></li>').children().last();
             sub = sub.append('<ul class="dropdown-menu"/>').children().last();
             buildnav(pages, sub,m[i].menu, visible);
             $(el).append("</ul>");
