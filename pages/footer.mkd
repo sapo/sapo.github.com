@@ -1,5 +1,5 @@
 <footer>
   <div class="well">
-    <p align="middle">&copy; <a href="http://www.sapo.pt"><b>sapo</b></a>, Servi&ccedil;o de Apontadores Portugueses 2012.</p>
+    <p align="middle">&copy; <a href="http://www.sapo.pt"><span class="brand">sapo</span></a>, Servi&ccedil;o de Apontadores Portugueses 2012.</p>
   </div>
 </footer>

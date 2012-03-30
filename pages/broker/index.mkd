@@ -4,19 +4,19 @@
 
 ## What is it?
 
-**sapo** Broker is a distributed messaging framework. Among other features, it provides minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.
+<span class="brand">sapo</span> Broker is a distributed messaging framework. Among other features, it provides minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.
 
-**sapo** Broker is written in Java, but has client libraries for [Perl][pl], [Python][py], [PHP][php], [.NET][net], [C][c] and quite a few [others][o], and you can talk to it using Thrift, XML or JSON.
+<span class="brand">sapo</span> Broker is written in Java, but has client libraries for [Perl][pl], [Python][py], [PHP][php], [.NET][net], [C][c] and quite a few [others][o], and you can talk to it using Thrift, XML or JSON.
 
-To start using **sapo** Broker take a look at the Quick Start tutorial, and then please read the User Guide for more in depth information.
+To start using <span class="brand">sapo</span> Broker take a look at the Quick Start tutorial, and then please read the User Guide for more in depth information.
 
 You can access our public broker server at <code>broker.labs.sapo.pt</code> and subscribe to a number of public topics to experiment with.
 
 ## How do I get started?
 
-Download the latest distribution bundle and read the Quick Start. To learn more about the design and concepts of **sapo** Broker read the User Guide.
+Download the latest distribution bundle and read the Quick Start. To learn more about the design and concepts of <span class="brand">sapo</span> Broker read the User Guide.
 
-You can fetch the latest version of the **sapo** Broker source code from our Git repo. For checking out the code use the <code>git</code> command line client as follows:
+You can fetch the latest version of the <span class="brand">sapo</span> Broker source code from our Git repo. For checking out the code use the <code>git</code> command line client as follows:
 
 <pre class="prettyprint">
 git clone git@github.com:sapo/sapo-broker.git
@@ -24,7 +24,7 @@ git clone git@github.com:sapo/sapo-broker.git
 
 ## License
 
-The **sapo** Broker core is distributed under the [BSD license][bsd]. Some dependencies or extensions are under [separate licensing][l].
+The <span class="brand">sapo</span> Broker core is distributed under the [BSD license][bsd]. Some dependencies or extensions are under [separate licensing][l].
 
 ## How to get involved
 
