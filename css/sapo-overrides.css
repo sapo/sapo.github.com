@@ -44,12 +44,24 @@ img.flag {
   opacity: 1.0;
 }
 
+.navbar-inner {
+    background-color: #2C6C2C;
+    background-image: -moz-linear-gradient(top, #383, #262);
+    background-image: -ms-linear-gradient(top, #383, #262);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#383), to(#262));
+    background-image: -webkit-linear-gradient(top, #383, #262);
+    background-image: -o-linear-gradient(top, #383, #262);
+    background-image: linear-gradient(top, #383, #262);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#222', GradientType=0);
+}
+
 /* Tweak navbar brand link */
 .navbar-fixed-top .brand {
   padding-right: 0;
   padding-left: 0;
   margin-left: 20px;
-  float: right;
+  float: left;
   font-weight: bold;
   color: #000;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
