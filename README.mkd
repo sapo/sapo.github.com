@@ -36,7 +36,7 @@ Go into `utils` and run `deploy.py`. This will:
 * Minify and bundle the JavaScript files (minfying CSS is not considered necessary yet)
 * Re-render `index.html` accordingly
 
-Then use Then use [http://localhost:8080/](http://localhost:8080/) for final testing and commit to Github. 
+Then use [http://localhost:8080/](http://localhost:8080/) for final testing and commit to Github. 
 
 ## Credits
 
