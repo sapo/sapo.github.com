@@ -28,6 +28,10 @@ a.brand span.podium, h1 span.podium, h2 span.podium, h3 span.podium {
   font-weight: normal;
 }
 
+code {
+    color: #286;
+}
+
 body, section {
     padding-top: 60px;
 }
