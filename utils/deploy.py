@@ -52,7 +52,7 @@ open('../index.html','w').write(str(soup))
 
 soup = BeautifulSoup(''.join(open('../dev-jekyll.html').readlines()))
 soup = js_bundle(soup)
-soup.head.insert(-1,'<script type="text/javascript" src="js/bundle-jekyll-min.js"></script>')
+soup.head.insert(-1,'<script type="text/javascript" src="/js/bundle-jekyll-min.js"></script>')
 print "Writing js/bundle-jekyll-min.js..."
 open('../js/bundle-jekyll-min.js', 'w').write('\n'.join(buffer))
 print "Writing jekyll.html..."
