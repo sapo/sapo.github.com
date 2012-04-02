@@ -17,11 +17,11 @@ p > span.podium {
 }
 
 a {
-    color: #0c8;
+    color: #080;
 }
 
 a:hover {
-    color: #008055;
+    color: #065;
 }
 
 a.brand span.podium, h1 span.podium, h2 span.podium, h3 span.podium {
