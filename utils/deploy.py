@@ -23,3 +23,6 @@ print "Writing js/bundle-min.js..."
 open('../js/bundle-min.js', 'w').write('\n'.join(buffer))
 print "Writing index.html..."
 open('../index.html','w').write(str(soup))
+
+# TODO: Generate Google sitemap from JSON
+# TODO: Generate Jekyll templates
