@@ -4,6 +4,8 @@
 
 In order to make the best out of Github hosting, the site is built as a single page web app.
 
+(Clarification for zealots - this is so that we can do away with the temporary structure we had since 2011 and start assembling a coherent URL namespace based on the repos, as we should have from the start. The hashbangs will be removed one by one as each project's documentation is reviewed.)
+
 * `index.json` provides all the site structure (menus, sidebars, etc.)
 * `pages` should be self-explanatory
 * `utils` contains staging and deployment tools
