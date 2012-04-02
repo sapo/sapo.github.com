@@ -15,6 +15,15 @@ span.podium {
 p > span.podium {
     font-size: 1.1em;
 }
+
+a {
+    color: #0c8;
+}
+
+a:hover {
+    color: #008055;
+}
+
 a.brand span.podium, h1 span.podium, h2 span.podium, h3 span.podium {
   font-weight: normal;
 }
