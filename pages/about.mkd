@@ -6,6 +6,11 @@ Although it is impossible to keep tabs on all the various minor patches and cont
 
 <hr>
 
+# LibSAPO.js <small>taming JavaScript</small>
+
+Our original foundation library for developing rich client-side user experiences, made available to the Open Source community to gather feedback and help those developing next generation websites and services. Now a part of [Ink][i], it spans over a hundred modules and provides unparalleled structure.
+
+
 # XMPP <small>building bridges</small>
 
 After using XMPP as the underpinnings of our IM service for a period of five years with excellent results, we felt the need to give back to the XMPP community and help consolidate what was then still a de facto standard in two fundamental aspects for non-technical users - desktop applications and interconnection with popular (incumbent) IM services such as MSN.
@@ -76,6 +81,7 @@ This is not an exhaustive list, but should give you an idea of how widespread ou
 [cpan1]: http://search.cpan.org/search?query=php%3A%3Ainterpreter&mode=all
 [cpan2]: http://search.cpan.org/~aff/PHP-Interpreter-1.0.2/lib/PHP/Interpreter.pm
 [id]: http://id.sapo.pt
+[i]: http://ink.sapo.pt
 [d]: http://www.dovecot.org/
 [db]: http://wiki2.dovecot.org/MailboxFormat/dbox
 [h]: http://horde.org
