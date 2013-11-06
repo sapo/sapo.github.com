@@ -12,35 +12,21 @@
 <div class="span8">
     <h2>What is it?</h2>
 
-    <p>This is an implementation of Portuguese Citizen Card support atop Opensc.Tokend, with native-grade Mac OS X integration.</p>
+    <p>This was the first fully working implementation of Portuguese Citizen Card support atop Opensc.Tokend, with native-grade Mac OS X integration.</p>
 
     <h2>Why?</h2>
 
     <p>The government-issued Portuguese Citizen Card software for Mac was, unfortunately, only compatible with Firefox.</p>
 
-    <p>Plus its sub-par integration meant that it did not take advantage of Mac OS X native security frameworks, therefore lacking proper keychain integration (and, in consequence, lack of support for Mail.app and Safari).</p>
+    <p>That has since been fixed (there is now <a href="http://www.cartaodecidadao.pt/index.php%3Foption=com_content&task=view&id=102&Itemid=44&lang=pt.html">a fully working set of official packages</a>), but the original version did not take advantage of Mac OS X native security frameworks and lacked proper keychain integration (and, in consequence, lack of support for Mail.app and Safari).</p>
 
-    <p>This project fixes that by reimplementing the required functionality atop OpenSC Tokend, a standards-compliant, cross-platform framework that allows for fully native integration and extensibility, thereby vastly improving the user experience and allowing for further app integration.</p>
+    <p>This project fixed that by reimplementing the required functionality atop OpenSC Tokend, a standards-compliant, cross-platform framework that allowed for fully native integration and extensibility, thereby vastly improving the user experience and allowing for further app integration.</p>
 
-    <h2>How can I help?</h2>
-    
-    <p>Test the binary packages and report any issues that you may come across.</p>
+    <h2>Source Code Archive</h2>
 
-    <h2>How do I get started?</h2>
+    <p>Although the project has since been discontinued, we've made available the final version of the source code <a href="https://github.com/sapo/osxcitizen">from our Git repo</a>. For checking out the code use the git command line client as follows:</p>
 
-    <p>Download the latest binary bundle and run the installer:</p>
-
-    <ul>
-        <li><a href="http://softwarelivre.sapo.pt/projects/osxcitizen/raw-attachment/wiki/WikiStart/osxcitizen-snow_leopard-lion.dmg">For Snow Leopard (10.6) and Lion (10.7)</a></li>
-        <li><a href="http://softwarelivre.sapo.pt/projects/osxcitizen/raw-attachment/wiki/WikiStart/osxcitizen-tiger_leopard.dmg">For Tiger (10.4) and Leopard (10.5)</a></li>
-    </ul>
-
-    <p>You can also the latest version of the source code from our Git repo. For checking out the code use the git command line client as follows:</p>
-
-    <pre class="prettyprint">
-git clone git://github.com/sapo/osxcitizen.git
-</pre>
-
+    <pre class="prettyprint">git clone git://github.com/sapo/osxcitizen.git</pre>
 </div>
 
 <div class="span8">
