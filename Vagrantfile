@@ -25,7 +25,7 @@ if [ /tmp/.limit -nt /var/cache/apt/pkgcache.bin ]; then
 fi
 rm /tmp/.limit
 
-if [ ! -x /usr/bin/jekyll ]; then
+if [ ! -x /usr/local/bin/jekyll ]; then
     gem install jekyll
 fi
 
