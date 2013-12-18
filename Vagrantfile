@@ -5,7 +5,7 @@
 # a relatively recent version of Vagrant, but your mileage may vary.
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
+  config.vm.box = "wheezy64"
 
   # Forward a port to the development server
   config.vm.network :forwarded_port, guest: 4000, host: 4000, host_ip: '0.0.0.0'
@@ -21,7 +21,7 @@ if [ /tmp/.limit -nt /var/cache/apt/pkgcache.bin ]; then
     apt-get -y autoremove
     apt-get -y update
     apt-get -y dist-upgrade
-    apt-get -y install htop tmux vim rsync rubygems
+    apt-get -y install htop tmux vim rsync ruby1.9.1-dev rubygems
 fi
 rm /tmp/.limit
 
