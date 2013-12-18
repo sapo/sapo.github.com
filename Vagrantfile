@@ -21,7 +21,7 @@ if [ /tmp/.limit -nt /var/cache/apt/pkgcache.bin ]; then
     apt-get -y autoremove
     apt-get -y update
     apt-get -y dist-upgrade
-    apt-get -y install htop tmux vim rsync ruby1.9.1-dev rubygems
+    apt-get -y install less htop tmux vim rsync ruby1.9.1-dev rubygems
 fi
 rm /tmp/.limit
 
