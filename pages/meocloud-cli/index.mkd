@@ -1,0 +1,28 @@
+# Meo Cloud CLI
+
+Currently, the [MEO Cloud][mc] desktop application consists of three main components:
+
+1.	GUI layer
+1.	File Manager Extension
+1.	Synchronization Core (a.k.a. "sync core" or just "core")
+
+The GUI and File Manager Extension components provide the user-visible part of the application. The GUI controls every aspect of the sync core functionality. The File Manager Extension improves integration with Desktop Managers by providing a contextual menu and status overlay icons for each file in the synchronized folder.
+
+The synchronization core is responsible for keeping the contents of the local MEOCloud folder in sync with the MEO Cloud service.
+
+In order to encourage developers to take advantage of our service, we've decided to release the source to a CLI interface to the synchronization core that exposes as much functionality as possible (selective sync, notifications, registration and local filesystem awareness).
+
+You can browse the CLI interface source code [here][repo], or check it out immediately by doing:
+
+<pre class="prettyprint">
+git clone https://github.com/sapo/meocloud-cli.git
+</pre>
+
+
+You can also obtain builds of [MEO Cloud][mc] client software for a number of different operating systems and architectures (including ARM) from our [official download page][dls].
+
+
+[dls]: https://meocloud.pt/downloads
+[mc]: https://meocloud.pt
+[repo]: https://github.com/sapo/meocloud-cli
+
