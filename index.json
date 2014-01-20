@@ -24,17 +24,6 @@
         ]
     },
     {
-        "id": "frontend",
-        "label":"Web", 
-        "menu": [
-            {
-                "id": "libsapojs",
-                "label": "LibSAPO.js",
-                "src":"pages/libsapojs/index.mkd"
-            }
-        ]
-    },
-    {
         "id": "mobile",
         "label": "Mobile",
         "menu": [
@@ -71,11 +60,6 @@
                         "src":"pages/meocloud-cli/protocols.mkd"
                     }
                 ]
-            },
-            {
-                "id": "mac-messenger",
-                "label":"Messenger", 
-                "src":"pages/mac/messenger.mkd"
             },
             {
                 "id": "mac-citizen-pt",

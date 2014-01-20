@@ -15,6 +15,7 @@ Our original foundation library for developing rich client-side user experiences
 
 After using XMPP as the underpinnings of our IM service for a period of five years with excellent results, we felt the need to give back to the XMPP community and help consolidate what was then still a de facto standard in two fundamental aspects for non-technical users - desktop applications and interconnection with popular (incumbent) IM services such as MSN.
 
+<br clear="all">
 <img src="img/psi128.png" style="width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;">
 
 The [Psi][p] project stood out as the most complete client-side framework available at the time, and <span class="podium">sapo</span> [sponsored its founder](http://listas.apesol.org/pipermail/delta-affinix.com/2005-February/000371.html), Justin Karneges, to continue developing and consolidating it.
@@ -26,6 +27,11 @@ The [Psi][p] project stood out as the most complete client-side framework availa
 As far as interconnection was concerned, the best available work at the time was being done in [PyMSNt][pm], a project headed by James Bunton, an Australian college student. With <span class="podium">sapo</span> sponsoring, [PyMSNt][pm] [gained avatar and file transfer support](http://delx.net.au/projects/pymsnt/news.html), allowing for easier and friendlier inter-operability between native XMPP clients and MSN.
 
 <br clear="all"/>
+
+<img src="img/sapo128.png" style="width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;">
+
+Finally, we made available [the full source code for the Mac version](https://github.com/sapo/sapo-messenger-for-mac) (which is the most up-to-date).
+
 
 # Bricolage <small>massive-scale content management</small>
 
