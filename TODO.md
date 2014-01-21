@@ -25,7 +25,7 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
     - [ ] Make triply sure we don't rely on JavaScript for anything important
     - [ ] Move in any new content that may have appeared in the meantime
     - [ ] Run aspell on the lot
-    - [ ] Check title tags, footer, outbound links, etc.
+    - [ ] Check title tags, social links in footer, outbound links, etc.
     - [ ] Run ImageOptim on the lot
     - [ ] Rewrite README for site-specific instructions
     - [ ] Merge to master and publish
@@ -34,6 +34,7 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
 
     - [ ] Decide whether we need the blog or prefer to direct people to another site
     - [ ] Decide whether we need comments or prefer to direct people to each project's issue page
+    - [ ] Decide whether to link to @sapo or @codebits in Twitter link
     - [ ] Remove Disqus code if so
 
 ## Investigate:
