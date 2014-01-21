@@ -6,8 +6,8 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
 
     - [x] Create jekyll branch
     - [x] Merge ghink.cc for basic themeing
-    - [ ] Remove as much legacy junk as possible
-    - [ ] Sanitize CSS to remove custom fonts
+    - [x] Remove as much legacy junk as possible
+    - [x] Sanitize CSS to remove custom fonts
     - [ ] Build hero layout
     - [ ] Build a standard top navigation bar
     - [ ] Section layout 
