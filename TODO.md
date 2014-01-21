@@ -42,3 +42,8 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
 
     - [ ] Responsive font scaffolding from InK develop branch (soon 3.0)
     - [ ] Whatever else is fashionable these days
+
+
+**Note:**: Github, in their ultimate wisdom, decided that [task lists][tlp] are only available in some contexts -- hence the indenting above.
+
+    [tlp]: https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
