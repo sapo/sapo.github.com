@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "We play Videos"
+date:   2013-11-20 16:00:00
+excerpt: "Ghink has a couple of Snippets to play video. Here are some examples of that."
+thumbnail: /assets/images/video_thumb.jpg
+frontimage: /assets/images/video.jpg
+categories: video
+---
+
+Ghink has a couple of Snippets to play video. Here are some examples of that.
+
+A video on Vimeo:
+
+{% include vimeo.html id="1084537" autoplay="0" controls="0" %}
+
+A video on Youtube:
+
+{% include youtube.html id="ouP9xNujkNo" autoplay="0" controls="1" %}
+
+A video on SAPO Videos:
+
+{% include sapovideos.html id="EUEF2ZiY5RqHoevCHYzt" %}
+
+To know more about Ghink Snippets [click here][1].
+
+<i class="icon-github"></i> [source for this page here][2].
+
+ [1]: https://github.com/celso/ghink/blob/gh-pages/_docs/SNIPPETS.md
+ [2]: https://raw.github.com/celso/ghink/gh-pages/_posts/2013-11-20-videos.markdown

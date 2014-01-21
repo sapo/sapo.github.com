@@ -1,0 +1,21 @@
+name: Ghink
+url: "http://ghink.cc/"
+description: "Ghink is a github pages, plus InK, plus Jekyll boilerplate. An easy way to start a beautiful, responsive, self-hosted, blog or website."
+disqus_shortname: "ghink"
+use_leaflet: 1
+ga_domain: "ghink.cc"
+ga_id: "UA-45360427-2"
+blog_more_posts: 5
+prettify_theme: "ghink"
+markdown: redcarpet
+pygments: true
+paginate: 3
+paginate_path: "blog/page/:num"
+timezone: Europe/Lisbon
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
