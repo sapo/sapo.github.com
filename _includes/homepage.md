@@ -1,3 +1,8 @@
+----
+layout: naked
+title: Open Source at SAPO
+----
+
 <div class="hero-unit">
     <img src="img/greencubes512.png" style="float: left; width: 200px; height: 200px; padding: 1em; margin-left: -3em;margin-top: -3em;">
   <div>
