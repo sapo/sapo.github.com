@@ -12,6 +12,8 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
 - [ ] Section layout 
 - [ ] Figure out how to do breadcrumbs/section nav
 - [ ] Page layout
+- [ ] Remove Google Analytics
+- [ ] Add SAPO Analytics
 - [ ] Check every single syntax highlighting invocation
 - [ ] Move pages to their right place inside _pages
 - [ ] Add suitable front matter to every page
@@ -25,6 +27,11 @@ This is what we need to do to migrate oss.sapo.pt to Jekyll
 - [ ] Run ImageOptim on the lot
 - [ ] Rewrite README for site-specific instructions
 - [ ] Merge to master and publish
+
+## Policy:
+
+- [ ] Decide whether we need comments or prefer to send people to each project's issue page
+- [ ] Remove Disqus code if so
 
 ## Investigate:
 
