@@ -1,36 +1,23 @@
-<header>
-    <h1 class="pull-right">
-        Ghink <small class="hide-medium">gh-pages + ink</small>
-    </h1>
-
-    <nav class="ink-navigation pull-left hide-small">
-        <ul class="menu horizontal black rounded shadowed">
-            <li data-urlexp="/^\/$/i"><a href="/">Home</a></li>
-            <li data-urlexp="/^\/pages\//i">
-                <a href="#" onclick="return(false);">Pages <i class="icon-caret-down"></i></a>
-                <ul class="submenu black">
-                    <li><a href="/pages/contacts.html">contacts</a></li>
-                </ul>
-            </li>
-            <li data-urlexp="/^\/cookbook\//i">
-                <a href="#" onclick="return(false);">InK Cookbook <i class="icon-caret-down"></i></a>
-                <ul class="submenu black">
-                    <li><a href="/cookbook/regular-grid.html">regular grid</a></li>
-                    <li><a href="/cookbook/3-boxes.html">3 boxes</a></li>
-                    <li><a href="/cookbook/4-boxes.html">4 boxes</a></li>
-                    <li><a href="/cookbook/advanced-grid.html">advanced grid</a></li>
-                    <li><a href="/cookbook/article-page.html">article page</a></li>
-                    <li><a href="/cookbook/badges.html">badges</a></li>
-                    <li><a href="/cookbook/fixed-sidebar.html">fixed sidebar</a></li>
-                    <li><a href="/cookbook/fixed-width-column.html">fixed width column</a></li>
-                    <li><a href="/cookbook/forms.html">forms</a></li>
-                    <li><a href="/cookbook/navigation-themes.html">navigation themes</a></li>
-                    <li><a href="/cookbook/tables.html">tables</a></li>
-                    <li><a href="/cookbook/tooltips.html">tooltips</a></li>
-                </ul>
-            </li>
-            <li data-urlexp="/^\/blog\//i"><a href="/blog/">Blog</a></li>
-        </ul>
-    </nav>
-
-</header>
+<div class="snap-drawers hide-m hide-l cb-nav">
+    <div class="snap-drawer snap-drawer-left" id="side-nav">
+          <nav class="ink-navigation">
+              <ul class="menu vertical">
+                 <li class="heading">Open Source at Sapo</li>
+                 <li class="home active"><a href="/">home</a></li>
+              </ul>
+          </nav>
+    </div>
+</div>
+<div class="topbar cb-nav" id="main-nav">
+   <div class="ink-grid">
+      <nav class="ink-navigation spy-nav">
+           <ul class="menu horizontal hide-large hide-medium push-left" id="main-nav-site">
+              <li>
+                 <button id="main-drawer">
+                    <i class="icon-reorder"></i>
+                 </button>
+              </li>
+           </ul>
+      </nav>
+   </div>
+</div>

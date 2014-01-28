@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hero
 title: Open Source at SAPO
 ---
 
