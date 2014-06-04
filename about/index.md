@@ -1,6 +1,6 @@
 --- 
 layout: home
-
+title: About - Open Source at SAPO 
 ---
 
 ## A brief history of Open Source software at SAPO

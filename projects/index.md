@@ -1,6 +1,6 @@
 --- 
 layout: default
-title: SAPO Open Source Projects
+title: Projects - Open Source at SAPO
 subtitle: Things we rely on every day
 ---
 <div class="ink-grid top-space projects">
