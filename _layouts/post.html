@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="ink-grid vertical-space post">
+<h2 class="small-align-center tiny-align-center">{{ page.title }}</h2>
+<!--<p class="meta">{{ page.date | date_to_string }}</p>-->
+<div class="column-group gutters">
+<div class="all-20 medium-40 small-100 tiny-100">
+<div class="left-box small-align-center tiny-align-center">
+<img src="{{page.image}}" alt="{{page.title}}">
+<div class="ink-label grey ">
+{{ page.version}}
+</div>
+
+{% if page.ul_title %}<p>{{ page.ul_title}}</p>{% endif %}
+
+
+<ul class="unstyled">
+    {% for link in page.urls  %}
+    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+    {% endfor %}
+</ul>
+{% if page.url_site %}<a class="ink-button green" href="{{ page.url_site}}"> {{ page.site }}</a>{% endif %}
+</div>
+   {% for link in page.out  %} 
+<ul class="unstyled out">
+  
+    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+    
+</ul>  
+  {% endfor %}
+    
+
+</div>
+<div class="all-80 medium-60 small-100 tiny-100">
+{{ content }}
+</div>
+</div>
+</div>

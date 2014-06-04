@@ -1,0 +1,25 @@
+name: Open Source at SAPO
+exclude: ['140318 OSS Pack (lifecycle + wireframes).pdf']
+learn: learn more
+paragraph: top-space small-align-left tiny-align-left
+image_list: all-30 small-100 tiny-100 small-align-center tiny-align-center
+block_list: all-70 small-100 tiny-100 small-align-center tiny-align-center
+four_columns: all-25 small-100 tiny-100
+three_columns: all-33 medium-100 small-100 tiny-100
+
+permalink: /:categories
+post_dirs: false
+
+menu:
+  - title: Home
+    url: /
+  - title: About 
+    url: /about
+  - title: Projects
+    url: /projects
+  - title: Initiatives
+    url: /initiatives
+  - title: Incubation
+    url: /incubation
+  
+markdown_ext: md,mkd,html

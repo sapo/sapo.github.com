@@ -1,0 +1,27 @@
+--- 
+layout: default
+title: Initiatives
+subtitle: that you can take part in
+---
+<div class="ink-grid top-space projects">
+
+
+
+   <div class="column-group gutters">
+            
+            <div class="all-100 align-center">
+              <h2 class="">{{ page.title }}</h2>
+              <h3 class="sub">{{ page.subtitle }}</h3>
+            </div>
+
+
+            {% for post in site.categories['initiatives'] %} 
+               {% include initiatives.html %}
+                 {% endfor %}
+             
+        
+        
+             
+        
+        </div>
+        </div>

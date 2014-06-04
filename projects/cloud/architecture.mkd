@@ -1,0 +1,22 @@
+---
+layout: home
+---
+
+<ul class="breadcrumb">
+  <li><a href="#!meocloud-cli">MEO Cloud CLI</a> <span class="divider">/</span></li>
+  <li>Architecture Overview</li>
+</ul>
+
+Architecture Overview
+=====================
+
+The following image provides a high-level picture of the desktop GUI application architecture. Note that the interface between the File Manager Extension and the Sync Core is subject to continuous development as we add new features.
+
+![MEO Cloud GUI Overview](architecture.png)
+
+Gray-colored components (GUI and File Manager Extension) are native operating system specific applications (Linux, Windows, Mac OS X, etc.). The sync core component is a multiplatform application and is available in binary compiled form. Interaction with the core is described in the following sections.
+
+The specific `<transport>` used depends on the operating system where the application is running: Unix sockets on Linux and OS X, and Windows named pipes on Windows.
+
+A CLI Python-based reference implementation is [available][repo] and may be used to create a working GUI. Communication between the core and the UI is implemented in the `client/linux/daemon` directory.
+
