@@ -1,6 +1,5 @@
 --- 
 layout: home
-title: About - Open Source at SAPO 
 ---
 
 ## A brief history of Open Source software at SAPO
@@ -29,7 +28,7 @@ The [Psi][p] project stood out as the most complete client-side framework availa
 
 <img src="../imgs/pymsnt128.png" class="about">
 
-As far as interconnection was concerned, the best available work at the time was being done in [PyMSNt][pm], a project headed by James Bunton, an Australian college student. With <span class="podium">sapo</span> sponsoring, [PyMSNt][pm] [gained avatar and file transfer support](http://delx.net.au/projects/pymsnt/news.html), allowing for easier and friendlier inter-operability between native XMPP clients and MSN.
+As far as interconnection was concerned, the best available work at the time was being done in [PyMSNt][pm], a project headed by James Bunton, an Australian college student. With SAPO sponsoring, [PyMSNt][pm] [gained avatar and file transfer support](http://delx.net.au/projects/pymsnt/news.html), allowing for easier and friendlier inter-operability between native XMPP clients and MSN.
 
 <br clear="all"/>
 
@@ -64,7 +63,7 @@ We adopted [Dovecot][d] as our IMAP and POP3 email server due to its excellent p
 
 [Horde][h] was the natural choice for our webmail front-ends, given its comprehensive suite of productivity, messaging, and project-management applications.
 
-<span class="podium">sapo</span> has been [sponsoring][h1] its development for [a number of years][h2], mainly where it concerns [IMP][imp] (for multiple-language, web-based access to e-mail) and [Kronolith][kr] (for calendaring and mobile syncing).
+SAPO has been [sponsoring][h1] its development for [a number of years][h2], mainly where it concerns [IMP][imp] (for multiple-language, web-based access to e-mail) and [Kronolith][kr] (for calendaring and mobile syncing).
 
 ### Shibboleth <small>keeping us safe</small>
 

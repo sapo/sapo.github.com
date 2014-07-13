@@ -1,5 +1,9 @@
 /*geral*/
 
+html{height: 100%;}
+
+body{min-height: 100%; position: relative; margin: 0; padding: 0;}
+
 .ink-navigation ul.menu.black {background: none repeat scroll 0 0 #3b363d;}
 
 .ink-button {text-transform: uppercase;}
@@ -14,9 +18,9 @@ i {font-family: FontAwesome; font-style: normal;}
 
 input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
-#topbar .ink-navigation button.fa-bars { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 0 none; color: #BBBBBB; float: left; font-size: 1.2em; padding: 0.8em 0.8em 0.8em 0;}
+#topbar .ink-navigation button.fa-bars, #topbar .ink-navigation button.fa-search{ background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 0 none; color: #BBBBBB; float: left; font-size: 1.2em; padding: 0.8em 0.8em 0.8em 0;}
 
-
+#topbar .ink-navigation button.fa-search {padding-right: 0;}
 
 /*header*/
 
@@ -33,7 +37,12 @@ input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
 .search input {padding-left:0.5em;}
 
+.search_m {font-size: 1.4em; padding:0.2em 0 0; display: block; color: #fff;}
+
 .ink-navigation ul.menu.black li.current a{color:#000; }
+
+#topbar_search input {margin: 0 0 0.5em; padding: 0.3em 0.2em 0.55em; width: 100%;}
+
 
 /*home*/
 
@@ -43,6 +52,7 @@ input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
 .spotlight img { max-height: 300px; text-align: center;}
 
+.projects {padding-bottom: 2em;}
 
 .projects img { max-height: 200px;}
 
@@ -50,7 +60,7 @@ input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
 .center {background:#f2f6e4; padding: 2em 0 0; }
 
-.check {text-transform: uppercase;  padding: 1em; color: #666;  background: #eee; border-radius: 2px;}
+.check {text-transform: uppercase;  padding: 1em; color: #666;  background: #eee; border-radius: 2px; display: block; max-width:468px; margin: 0 auto;}
 
 .check:hover {text-decoration: none; color: #666; background: #ddd; }
 
@@ -85,14 +95,19 @@ h3 small{color: #333; font-weight: 300; }
 img.about {width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;}
 /*footer*/
 
-footer {overflow: hidden; background: #48454c; bottom: 0; width: 100%;}
+footer {overflow: hidden; background: #48454c; bottom: 0; width: 100%; position: absolute;}
 
 footer a{color: #ccc; font-size:0.8em;}
 
 footer a:hover{color: #bbb; text-decoration: none;}
 
+footer .ink-navigation ul.menu a:hover, footer .ink-navigation ul.menu li.active a{text-decoration: none; color: #fff;}
+
 @media screen and (max-width: 640px) {
     
    .ink-label {margin:0 auto;}
     
+   .ink-sticky {position: relative;}
+    
 }
+
