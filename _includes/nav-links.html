@@ -1,15 +1,13 @@
 {% assign current_page_url = page.url | replace: '/index.html','' %}
     
-    {% if current_page_url == '' %}
-        {% assign current_page = '/' %}
-    {% else %}
-        {% assign current_page = current_page_url %}
-    {% endif %}
-   
+{% if current_page_url == '' %}
+    {% assign current_page = '/' %}
+{% else %}
+    {% assign current_page = current_page_url %}
+{% endif %}
 
-   
-        {% for link in site.menu %}
-        <li {% if link.url == current_page %}class="active"{% endif %}>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-    {% endfor %}
+{% for link in site.menu %}
+    <li {% if link.url == current_page %}class="active"{% endif %}>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+    </li>
+{% endfor %}
