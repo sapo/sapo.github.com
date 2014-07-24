@@ -3,13 +3,9 @@ layout: default
 image: imgs/greencubes512.png
 ---
 
-
 {% include spotlight.html %}
-
+<a class="ink-smooth-scroll" name="projects" data-margin="45px"></a>
 <div class="ink-grid top-space projects">
-
-
-
     <div class="column-group gutters">
 
         <div class="all-100 align-center">
@@ -17,17 +13,16 @@ image: imgs/greencubes512.png
             <p>Things we rely on every day</p>
         </div>
 
-
         {% for post in site.categories['projects'] limit:3 %} {% include projects.html %} {% endfor %}
 
         <div class="all-100 align-center">
-            <a class="check" href="/projects">Check out all of our Open Source Projects</a>
-
+            <a class="check ink-smooth-scroll" href="#ongoing">Check out all of our Open Source Projects</a>
         </div>
     </div>
 
 </div>
 
+<a class="ink-smooth-scroll" name="initiatives" data-margin="45px"></a>
 <div class="center">
     <div class="ink-grid top-space projects">
 
@@ -40,13 +35,19 @@ image: imgs/greencubes512.png
         </div>
     </div>
 </div>
+
+<a class="ink-smooth-scroll" name="ongoing" data-margin="45px"></a>
 <div class="ink-grid top-space projects">
     <div class="all-100 align-center">
-        <h2 class="">Incubation</h2>
-        <p>Shared experiences</p>
+        <h2 class="">Ongoing</h2>
+        <p>Things you can join in creating</p>
     </div>
-    <div class="column-group gutters">
-        {% for post in site.categories['incubation'] limit:8 %} {% include incubation.html %} {% endfor %}
+    <div id="repo-list" class="column-group gutters">
+        
 
     </div>
 </div>
+
+<script src="/js/repos.js"></script>
+<script src="https://api.github.com/users/sapo/repos?callback=load"></script>
+<script type="text/javascript" src="http://cdn.ink.sapo.pt/3.0.5/js/autoload.js"></script>

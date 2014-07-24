@@ -8,6 +8,6 @@
 
 {% for link in site.menu %}
     <li {% if link.url == current_page %}class="active"{% endif %}>
-        <a href="{{ link.url }}">{{ link.title }}</a>
+        <a class="ink-smooth-scroll" data-margin="45px" href="{{ link.url }}">{{ link.title }}</a>
     </li>
 {% endfor %}
