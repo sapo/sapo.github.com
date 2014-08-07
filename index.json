@@ -6,20 +6,7 @@
             {
                 "id": "broker",
                 "label": "sapo broker",
-                "src":"pages/broker/index.mkd",
-                "sidebar": "pages/broker/sidebar.mkd",
-                "children": [
-                    {
-                        "id": "broker-perl",
-                        "label": "Perl Client",
-                        "src":"pages/broker/perl.mkd"
-                    },
-                    {
-                        "id": "broker-php",
-                        "label": "PHP Client", 
-                        "src":"pages/broker/php.mkd"
-                    }
-                ]
+                "href":"/sapo-broker"
             }
         ]
     },
