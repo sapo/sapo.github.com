@@ -58,7 +58,7 @@ input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
 .projects h2 { font-size: 3.2em; font-weight: 200; margin-bottom:0.3em;}
 
-.center {background:#f2f6e4; padding: 2em 0 0; }
+.center { padding: 2em 0 0; }
 
 .check {text-transform: uppercase;  padding: 1em; color: #666;  background: #eee; border-radius: 2px; display: block; max-width:468px; margin: 0 auto;}
 
@@ -109,15 +109,4 @@ footer .ink-navigation ul.menu a:hover, footer .ink-navigation ul.menu li.active
     
    .ink-sticky {position: relative;}
     
-}
-
-div.fixed-wrapper {
-    position: fixed;
-    background-color: #DBDCD6;
-    z-index: 100;
-    height: 45px;
-}
-
-div.content-wrapper {
-    padding-top: 45px;
 }

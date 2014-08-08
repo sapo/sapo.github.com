@@ -19,7 +19,7 @@ menu:
     url: /#projects
   - title: Initiatives
     url: /#initiatives
-  - title: Ongoing
+  - title: More
     url: /#ongoing
   
 markdown_ext: md,mkd

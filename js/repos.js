@@ -36,12 +36,10 @@ var repoList     = document.getElementById('repo-list'),
             f += r.forks;
             fork ? lf++ : lp++;
             html += '<div class="all-25 small-100 tiny-100">'
-                + '<a href="' + r.html_url + '">'
+                + '<a href="' + r.html_url + '"><h4>' + r.name + '</h4></a>'
+                + '<p class="desc">' + escapeHtml(r.description) + '</p>'
                 + fork
-                + '<span class="info"><b class="language">' + (r.language || '') + '</b> <b><i class="icon-star"></i> ' + watchers + '</b>  <b><i class="icon-code-fork"></i> ' + forks + '</b></span>'
-                + '<b>' + r.name + '</b> '
-                + '<span class="desc">' + escapeHtml(r.description) + '</span>'
-                + '</a>'
+                + '<p class="info"><b class="language">' + (r.language || '') + '</b> <b><i class="fa icon-star"></i> ' + watchers + '</b>  <b><i class="fa icon-code-fork"></i> ' + forks + '</b></p>'
                 + '</div>';
         }
         repoList.innerHTML = html;

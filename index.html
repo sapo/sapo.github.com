@@ -4,49 +4,156 @@ image: imgs/greencubes512.png
 ---
 
 {% include spotlight.html %}
+
 <a class="ink-smooth-scroll" name="projects" data-margin="45px"></a>
-<div class="ink-grid top-space projects">
-    <div class="column-group gutters">
-
-        <div class="all-100 align-center">
-            <h2 class="">SAPO Open Source Projects</h2>
-            <p>Things we rely on every day</p>
-        </div>
-
-        {% for post in site.categories['projects'] limit:3 %} {% include projects.html %} {% endfor %}
-
-        <div class="all-100 align-center">
-            <a class="check ink-smooth-scroll" href="#ongoing">Check out all of our Open Source Projects</a>
-        </div>
-    </div>
-
-</div>
-
-<a class="ink-smooth-scroll" name="initiatives" data-margin="45px"></a>
-<div class="center">
+<section id="projects" class="center">
     <div class="ink-grid top-space projects">
-
         <div class="column-group gutters">
             <div class="all-100 align-center">
-                <h2 class="">Initiatives</h2>
-                <p>Things that you can take part in</p>
+                <h2>Key Projects</h2>
+                <p>Things we rely on every day</p>
             </div>
-            {% for post in site.categories['initiatives'] limit:3 %} {% include initiatives.html %} {% endfor %}
+
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/broker512.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>SAPO Broker</h3>
+                        <div class="ink-label grey">
+                            4.0.50
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">SAPO Broker is a distributed messaging framework. Among other features, it provides minimal administration overhead, Publish-Subscribe and Point-to-Point messaging, guaranteed delivery and wildcard subscriptions.</p>
+                        <a href="http://oss.sapo.pt/sapo-broker" class="ink-button green">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/ink.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>Ink</h3>
+                        <div class="ink-label grey">
+                            awesomeness
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">A complete web framework with superpowers - interactive and responsive cross-browser awesomeness in a few strokes.</p>
+                        <a href="http://ink.sapo.pt" class="ink-button green">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/meo_cloud.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>Meo Cloud CLI</h3>
+                        <div class="ink-label grey">
+                            BLISS
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">A CLI client for our MEO Cloud sync service - adapt it to your needs or port it to new systems with ease.</p>
+                        <a href="/projects/cloud" class="ink-button green">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="all-100 align-center">
+                <a class="check ink-smooth-scroll" href="#ongoing">Check out all of our Open Source Projects</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
+<a class="ink-smooth-scroll" name="initiatives" data-margin="45px"></a>
+<section style="background:#f2f6e4;" id="initiatives" class="center">
+    <div class="ink-grid top-space projects">
+        <div class="column-group gutters">
+            <div class="all-100 align-center">
+                <h2>Initiatives</h2>
+                <p>Things that you can take part in</p>
+            </div>
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/sdb512.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>Services</h3>
+                        <div class="ink-label grey">
+                            our boxes open
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">Our comprehensive web service catalog allows anyone to easily create rich web applications that leverage the same APIs we use for developing our own services - and the platform that supports it is going commercial.</p>
+                        <a href="http://services.sapo.pt" class="ink-button green">learn more</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/labs400.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>SAPO Labs</h3>
+                        <div class="ink-label grey">
+                            spawning
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">Our partnership with leading Portuguese universities, nursing new concepts until they are ready to go out into the world - where academic brilliance meets cutting-edge technology.</p>
+                        <a href="http://labs.sapo.pt" class="ink-button green">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="all-33 medium-100 small-100 tiny-100">
+                <div class="column-group gutters">
+                    <div class="all-30 small-100 tiny-100 small-align-center tiny-align-center">
+                        <img src="/imgs/bot_codebits.png">
+                    </div>
+                    <div class="all-70 small-100 tiny-100 small-align-center tiny-align-center">
+                        <h3>Codebits</h3>
+                        <div class="ink-label grey">
+                            over 800 served
+                        </div>
+
+                        <p class="top-space small-align-left tiny-align-left">sapo Codebits is our yearly event, where 800 hand-picked participants get to compete in a 3-day programming contest, attend talks, and push the envelope in technology, design, and creativity.</p>
+                        <a href="https://codebits.eu" class="ink-button green">learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+ 
+        </div>
+    </div>
+</section>
 <a class="ink-smooth-scroll" name="ongoing" data-margin="45px"></a>
-<div class="ink-grid top-space projects">
-    <div class="all-100 align-center">
-        <h2 class="">Ongoing</h2>
-        <p>Things you can join in creating</p>
+<section id="ongoing" class="center">
+    <div class="ink-grid top-space projects">
+        <div class="all-100 align-center">
+            <h2>All Open Source</h2>
+            <p>Things you can join in creating</p>
+        </div>
+        <div id="repo-list" class="column-group gutters">
+        </div>
     </div>
-    <div id="repo-list" class="column-group gutters">
-        
-
-    </div>
-</div>
+</section>
 
 <script src="/js/repos.js"></script>
 <script src="https://api.github.com/users/sapo/repos?callback=load"></script>
