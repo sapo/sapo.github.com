@@ -29,20 +29,19 @@ var repoList     = document.getElementById('repo-list'),
         var l = repositories.length, lp = 0, lf = 0, w = 0, f = 0;
         for (var i=0; i<l; i++){
             var r = repositories[i],
-                fork = r.fork ? '<i class="icon-code-fork"></i> ' : '',
+                fork = r.fork ? '<i class="fa fa-code-fork"></i> ' : '',
                 watchers = r.watchers,
                 forks = r.forks;
             w += r.watchers;
             f += r.forks;
             fork ? lf++ : lp++;
             html += '<div class="all-25 small-100 tiny-100">'
-                + '<a href="' + r.html_url + '"><h4>' + r.name + '</h4></a>'
-                + '<p class="desc">' + escapeHtml(r.description) + '</p>'
-                + fork
-                + '<p class="info"><b class="language">' + (r.language || '') + '</b> <b><i class="fa icon-star"></i> ' + watchers + '</b>  <b><i class="fa icon-code-fork"></i> ' + forks + '</b></p>'
+            + '<a href="' + r.html_url + '" style="text-transform: uppercase;"><h4>' + fork + r.name + '</h4></a>'
+                + '<a class="ink-button small green bottom-space" href="' + r.html_url + '"><b class="language">' + (r.language || '') + '</b> <b><i class="fa fa-star"></i> ' + watchers + '</b>  <b><i class="fa fa-code-fork"></i> ' + forks + '</b></a>'
+                + '<div class="gutters">' + escapeHtml(r.description) + '</div>'
                 + '</div>';
         }
         repoList.innerHTML = html;
         projectCount.innerHTML = l + ' repositories; ' + lp + ' public, ' + lf + ' forks';
-        projectInfo.innerHTML = '<b><i class="icon-star"></i> ' + w + '</b>  <b><i class="icon-code-fork"></i> ' + f + '</b>';
+        projectInfo.innerHTML = '<b><i class="fa fa-star"></i> ' + w + '</b>  <b><i class="fa fa-code-fork"></i> ' + f + '</b>';
     };
