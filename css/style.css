@@ -29,7 +29,7 @@ input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
 
 .header h1 {margin: 0;}
 
-.header a{background:url("../imgs/logo.png") no-repeat; display: block; overflow: hidden; text-indent: -999em; width: 110px; height: 36px;}
+.header a{background:url("../imgs/logo.png") no-repeat; display: block; overflow: hidden; text-indent: -999em; width: 255px; height: 72px;}
 
 #topbar { background: #3b363d; width: 100%; overflow: hidden;}
 
