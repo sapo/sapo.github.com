@@ -1,0 +1,24 @@
+<div id="topbar" class="ink-sticky fixed-wrapper">
+    <div class="ink-grid">
+        <nav class="ink-navigation hide-tiny hide-small show-xlarge show-large show-medium" data-offset-top="0">
+            <ul class="menu horizontal black">
+                {% include nav-links.html %}
+            </ul>
+        </nav>
+        <nav class="ink-navigation hide-all show-small show-tiny">
+            <ul class="menu vertical">
+                <li>
+                    <button class="toggle push-left fa fa-bars" data-target="#topbar_menu" id="toggleVisibility">
+                    </button>
+                </li>
+                <li class="push-right search hide-all show-small show-tiny">
+                    <button  class="search_m toggle fa fa-search" data-target="#topbar_search" id="toggleVisibility1">
+                    </button>
+                </li>
+            </ul>
+            <ul id="topbar_menu" class="menu vertical black hide-all">
+                {% include nav-links.html %}
+            </ul>
+        </nav>
+    </div>
+</div>

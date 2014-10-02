@@ -1,0 +1,31 @@
+name: Open Source at SAPO
+learn: learn more
+#paragraph: top-space small-align-left tiny-align-left
+#image_list: all-30 small-100 tiny-100 small-align-center tiny-align-center
+#block_list: all-70 small-100 tiny-100 small-align-center tiny-align-center
+#four_columns: all-25 small-100 tiny-100
+#three_columns: all-33 medium-100 small-100 tiny-100
+
+#permalink: /:categories
+
+menu:
+  - title: Home
+    url: /#top
+  - title: About 
+    url: /about
+  - title: Projects
+    url: /#projects
+  - title: Initiatives
+    url: /#initiatives
+  - title: More
+    url: /#ongoing
+ 
+
+timezone: Europe/Lisbon
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
