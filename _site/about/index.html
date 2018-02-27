@@ -46,13 +46,6 @@
         <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.0/js/holder.js"></script>
         <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.0/js/ink-all.min.js"></script>
 
-        <script type="text/javascript" src="http://js.sapo.pt/SAPOWebAnalytics/"></script>
-        <script>
-          SAPO.WebAnalytics.track({
-            swakt:"0755b53a-a5fc-4302-9fa1-094ec633b51e"
-            ,swasection: "About Open Source at SAPO"
-          });
-        </script>
     
     </head>
     <body>
@@ -74,17 +67,21 @@
         <a class="ink-smooth-scroll" data-margin="45px" href="/#projects">Projects</a>
     </li>
 
+<!--
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#initiatives">Initiatives</a>
     </li>
+-->
 
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#ongoing">More</a>
     </li>
 
+<!--
     <li style="float: right;">
         <a class="ink-smooth-scroll" data-margin="45px" href="/about">About</a>
     </li>
+-->
             </ul>
         </nav>
         <nav class="ink-navigation hide-all show-small show-tiny">
@@ -107,17 +104,21 @@
         <a class="ink-smooth-scroll" data-margin="45px" href="/#projects">Projects</a>
     </li>
 
+<!--
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#initiatives">Initiatives</a>
     </li>
+-->
 
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#ongoing">More</a>
     </li>
 
+<!--
     <li style="float: right;">
         <a class="ink-smooth-scroll" data-margin="45px" href="/about">About</a>
     </li>
+-->
             </ul>
         </nav>
     </div>
@@ -133,11 +134,11 @@
 
 <hr />
 
-<h3 id="libsapojs-smalltaming-javascriptsmall">LibSAPO.js <small>taming JavaScript</small></h3>
+<h3 id="libsapojs-taming-javascript">LibSAPO.js <small>taming JavaScript</small></h3>
 
 <p>Our original foundation library for developing rich client-side user experiences, made available to the Open Source community to gather feedback and help those developing next generation websites and services. Now a part of <a href="http://ink.sapo.pt">Ink</a>, it spans over a hundred modules and provides unparalleled structure.</p>
 
-<h3 id="xmpp-smallbuilding-bridgessmall">XMPP <small>building bridges</small></h3>
+<h3 id="xmpp-building-bridges">XMPP <small>building bridges</small></h3>
 
 <p>After using XMPP as the underpinnings of our IM service for a period of five years with excellent results, we felt the need to give back to the XMPP community and help consolidate what was then still a de facto standard in two fundamental aspects for non-technical users - desktop applications and interconnection with popular (incumbent) IM services such as MSN.</p>
 
@@ -158,7 +159,7 @@
 
 <p>Finally, we made available <a href="https://github.com/sapo/sapo-messenger-for-mac">the full source code for the Mac version</a> (which is the most up-to-date).</p>
 
-<h3 id="bricolage-smallmassive-scale-content-managementsmall">Bricolage <small>massive-scale content management</small></h3>
+<h3 id="bricolage-massive-scale-content-management">Bricolage <small>massive-scale content management</small></h3>
 
 <p><a href="http://bricolagecms.org/">Bricolage</a> is an open-source enterprise-class content management and publishing system that greatly simplifies creating, managing, and publishing the vast libraries of content available to <span class="podium">sapo</span>, and we adopted it as one of our CMS platforms from the very beginning - which meant both contributing to and sponsoring it in <a href="http://comments.gmane.org/gmane.comp.db.postgresql.announce/156">a number of ways</a>, such as:</p>
 
@@ -168,43 +169,43 @@
   <li>The addition of a WebDAV distribution mover.</li>
 </ul>
 
-<h3 id="php-sandwich-smalldo-you-want-ketchup-with-thatsmall">PHP Sandwich <small>do you want ketchup with that?</small></h3>
+<h3 id="php-sandwich-do-you-want-ketchup-with-that">PHP Sandwich <small>do you want ketchup with that?</small></h3>
 
 <p>Another major contribution to <a href="http://bricolagecms.org/">Bricolage</a> that stands on its own was to <a href="http://justatheory.com/bricolage/1.9.0.html">sponsor the development</a> of the <a href="http://www.perl.org">Perl</a> module <a href="http://search.cpan.org/search?query=php%3A%3Ainterpreter&amp;mode=all">PHP::Interpreter</a>, that loads a <a href="http://www.php.net">PHP 5</a> interpreter into <a href="http://www.perl.org">Perl</a>. <a href="http://bricolagecms.org/news/announce/changes/bricolage-1.10.0/">PHP  templates in Bricolage then became pure PHP</a> while allowing transparent access to the <a href="http://www.perl.org">Perl</a>-based <a href="http://bricolagecms.org/">Bricolage</a> environment.</p>
 
 <p><a href="http://search.cpan.org/search?query=php%3A%3Ainterpreter&amp;mode=all">PHP::Interpreter</a> is, of course, available on <a href="http://search.cpan.org/~aff/PHP-Interpreter-1.0.2/lib/PHP/Interpreter.pm">CPAN</a>, allowing any <a href="http://www.perl.org">Perl</a>-based application to leverage its functionality.</p>
 
-<h3 id="mail-smallopen-is-bettersmall">Mail <small>open is better</small></h3>
+<h3 id="mail-open-is-better">Mail <small>open is better</small></h3>
 
 <p>Our <a href="http://mail.sapo.pt">sapo mail</a> service currently provides 10GB mailboxes to over 6 million users, and we proudly run it on a fully open software stack - which means contributing to a number of top-tier Open Source projects.</p>
 
-<h3 id="dovecot-smallthere-can-be-only-onesmall">Dovecot <small>there can be only one</small></h3>
+<h3 id="dovecot-there-can-be-only-one">Dovecot <small>there can be only one</small></h3>
 
 <p>We adopted <a href="http://www.dovecot.org/">Dovecot</a> as our IMAP and POP3 email server due to its excellent performance, its extensive set of features (such as indexing) and its emphasis on security. We are (very) active sponsors, and deeply involved in the development of its <a href="http://wiki2.dovecot.org/MailboxFormat/dbox">dbox</a> mailbox format and single-instance storage.</p>
 
-<h3 id="horde-smallthe-smile-on-our-front-endssmall">Horde <small>the smile on our front-ends</small></h3>
+<h3 id="horde-the-smile-on-our-front-ends">Horde <small>the smile on our front-ends</small></h3>
 
 <p><a href="http://horde.org">Horde</a> was the natural choice for our webmail front-ends, given its comprehensive suite of productivity, messaging, and project-management applications.</p>
 
 <p>SAPO has been <a href="http://janschneider.de/news/25/252">sponsoring</a> its development for <a href="http://www.techworld.com.au/article/263744/open_source_identity_horde_lead_developer_jan_schneider/?pp=3">a number of years</a>, mainly where it concerns <a href="http://www.horde.org/apps/imp/">IMP</a> (for multiple-language, web-based access to e-mail) and <a href="http://www.horde.org/apps/kronolith/">Kronolith</a> (for calendaring and mobile syncing).</p>
 
-<h3 id="shibboleth-smallkeeping-us-safesmall">Shibboleth <small>keeping us safe</small></h3>
+<h3 id="shibboleth-keeping-us-safe">Shibboleth <small>keeping us safe</small></h3>
 
 <p><img src="../imgs/shibboleth128.png" class="about" /></p>
 
 <p><a href="http://shibboleth.internet2.edu/">Shibboleth</a> is one of the underpinnings of <span class="podium">sapo</span>’s authentication and authorization infrastructure (both internal and <a href="http://id.sapo.pt">external</a>).</p>
 
-<p>We contributed to the <a href="http://shibboleth.internet2.edu/">Shibboleth</a> SP by adding support for <code>memcached</code> session storage and <code>FastCGI</code>, which makes it easier for us to make available our <span class="podium">sapo</span> <a href="http://id.sapo.pt">ID</a> service to our entire network of partner sites.</p>
+<p>We contributed to the <a href="http://shibboleth.internet2.edu/">Shibboleth</a> SP by adding support for <code class="highlighter-rouge">memcached</code> session storage and <code class="highlighter-rouge">FastCGI</code>, which makes it easier for us to make available our <span class="podium">sapo</span> <a href="http://id.sapo.pt">ID</a> service to our entire network of partner sites.</p>
 
-<h3 id="miscellaneous-smallodds-and-endssmall">Miscellaneous <small>odds and ends</small></h3>
+<h3 id="miscellaneous-odds-and-ends">Miscellaneous <small>odds and ends</small></h3>
 
 <p>We also submitted (and update as necessary) a few patches for other projects like</p>
 
 <ul>
-  <li><code>libmemcached</code></li>
+  <li><code class="highlighter-rouge">libmemcached</code></li>
   <li><a href="http://sourceware.org/bugzilla/show_bug.cgi?id=5541">libc</a></li>
-  <li>The <code>MySQL</code> JDBC connector</li>
-  <li><code>openid4java</code></li>
+  <li>The <code class="highlighter-rouge">MySQL</code> JDBC connector</li>
+  <li><code class="highlighter-rouge">openid4java</code></li>
   <li><a href="https://code.djangoproject.com/ticket/14032">Django</a></li>
   <li>Tomcat</li>
   <li>LiveJournal</li>
@@ -242,17 +243,21 @@
         <a class="ink-smooth-scroll" data-margin="45px" href="/#projects">Projects</a>
     </li>
 
+<!--
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#initiatives">Initiatives</a>
     </li>
+-->
 
     <li>
         <a class="ink-smooth-scroll" data-margin="45px" href="/#ongoing">More</a>
     </li>
 
+<!--
     <li style="float: right;">
         <a class="ink-smooth-scroll" data-margin="45px" href="/about">About</a>
-    </li>    
+    </li>
+-->    
 </ul>
     
 </nav>

@@ -1,0 +1,112 @@
+/*geral*/
+
+html{height: 100%;}
+
+body{min-height: 100%; position: relative; margin: 0; padding: 0;}
+
+.ink-navigation ul.menu.black {background: none repeat scroll 0 0 #3b363d;}
+
+.ink-button {text-transform: uppercase;}
+
+.ink-button.green {border:none; background: #A0B94E;}
+
+.ink-button.green:hover {border:none; box-shadow: none; background:#90a93d; }
+
+.ink-label {padding: 0.2em 0; text-align: center; width: 145px; text-transform: uppercase;}
+
+i {font-family: FontAwesome; font-style: normal;}
+
+input, textarea {margin: 0; padding: 0.3em 0 0.55em;}
+
+#topbar .ink-navigation button.fa-bars, #topbar .ink-navigation button.fa-search{ background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 0 none; color: #BBBBBB; float: left; font-size: 1.2em; padding: 0.8em 0.8em 0.8em 0;}
+
+#topbar .ink-navigation button.fa-search {padding-right: 0;}
+
+/*header*/
+
+
+.header {background: #222; padding: 1.5em 0;}
+
+.header h1 {margin: 0;}
+
+.header a{background:url("../imgs/logo.png") no-repeat; display: block; overflow: hidden; text-indent: -999em; width: 255px; height: 72px;}
+
+#topbar { background: #3b363d; width: 100%; overflow: hidden;}
+
+.search {margin: 0.2em 0;}
+
+.search input {padding-left:0.5em;}
+
+.search_m {font-size: 1.4em; padding:0.2em 0 0; display: block; color: #fff;}
+
+.ink-navigation ul.menu.black li.current a{color:#000; }
+
+#topbar_search input {margin: 0 0 0.5em; padding: 0.3em 0.2em 0.55em; width: 100%;}
+
+
+/*home*/
+
+.spotlight {background:#f0f0f0; padding: 2em 0 0; }
+
+.spotlight h2 {font-size: 4em; margin:0.7em 0 0.2em;  }
+
+.spotlight img { max-height: 300px; text-align: center;}
+
+.projects {padding-bottom: 2em;}
+
+.projects img { max-height: 200px;}
+
+.projects h2 { font-size: 3.2em; font-weight: 200; margin-bottom:0.3em;}
+
+.center { padding: 2em 0 0; }
+
+.check {text-transform: uppercase;  padding: 1em; color: #666;  background: #eee; border-radius: 2px; display: block; max-width:468px; margin: 0 auto;}
+
+.check:hover {text-decoration: none; color: #666; background: #ddd; }
+
+.check:after {font-family: FontAwesome; font-style: normal; content: "\f0a9"; margin-left: 0.5em;}
+
+/*lists*/
+
+h3.sub {font-weight: 300; margin-top: 0; font-size: 1.4em;}
+
+
+/*post*/
+
+.post h2 { font-size: 3.2em; font-weight: 200; margin:1em 0 0.5em;}
+
+.left-box { background: #f7f7f7; padding: 0.5em; border-radius: 5px;}
+
+.left-box p{margin:2em 0 0; line-height: 0;}
+
+.left-box .ink-label {margin: 1em auto 0.5em;}
+
+.out a:after{font-family: FontAwesome; font-style: normal; content: "\f14c"; margin-left: 0.5em;}
+
+pre { background: #f7f7f7; padding: 0.5em; border-radius: 5px;}
+
+
+/*about*/
+
+h3 {clear: both; font-size: 2em; font-weight: 600; margin-top: 1.8em;}
+
+h3 small{color: #333; font-weight: 300; }
+
+img.about {width: 64px; height: auto; float: left; padding-right: 1em; padding-bottom: 1em;}
+/*footer*/
+
+footer {overflow: hidden; background: #48454c; bottom: 0; width: 100%; position: absolute;}
+
+footer a{color: #ccc; font-size:0.8em;}
+
+footer a:hover{color: #bbb; text-decoration: none;}
+
+footer .ink-navigation ul.menu a:hover, footer .ink-navigation ul.menu li.active a{text-decoration: none; color: #fff;}
+
+@media screen and (max-width: 640px) {
+    
+   .ink-label {margin:0 auto;}
+    
+   .ink-sticky {position: relative;}
+    
+}
