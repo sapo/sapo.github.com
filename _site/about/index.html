@@ -13,38 +13,38 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) here  -->
 
-        <link rel="shortcut icon" href="http://imgs.sapo.pt/sapologos/favicon/generic/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="192x192" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-192.png">
-        <link rel="icon" sizes="128x128" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-128.png">
-        <link rel="apple-touch-icon" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-60.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-76.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-120.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="http://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-152.png">
+        <link rel="shortcut icon" href="https://imgs.sapo.pt/sapologos/favicon/generic/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="192x192" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-192.png">
+        <link rel="icon" sizes="128x128" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-128.png">
+        <link rel="apple-touch-icon" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://imgs.sapo.pt/sapologos/touchicon/generic/touch-icon-152.png">
 
         <!-- load inks css from the cdn -->
-        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.0/css/ink-flex.min.css">
-        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.0/css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.0/css/ink.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.ink.sapo.pt/3.1.0/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.ink.sapo.pt/3.1.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.ink.sapo.pt/3.1.0/css/ink.min.css">
         <link rel="stylesheet" href="/css/site.css">
        
 
         <!-- load inks css for IE8 -->
         <!--[if lt IE 9 ]>
-        <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.ink.sapo.pt/3.1.0/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <![endif]-->
 
         <!-- test browser flexbox support and load legacy grid if unsupported -->
-        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.0/js/modernizr.js"></script>
+        <script type="text/javascript" src="https://cdn.ink.sapo.pt/3.1.0/js/modernizr.js"></script>
         <script type="text/javascript">
             Modernizr.load({
               test: Modernizr.flexbox,
-              nope : 'http://cdn.ink.sapo.pt/3.1.0/css/ink-legacy.min.css'
+              nope : 'https://cdn.ink.sapo.pt/3.1.0/css/ink-legacy.min.css'
             });
         </script>
 
         <!-- load inks javascript files from the cdn -->
-        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.0/js/holder.js"></script>
-        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.0/js/ink-all.min.js"></script>
+        <script type="text/javascript" src="https://cdn.ink.sapo.pt/3.1.0/js/holder.js"></script>
+        <script type="text/javascript" src="https://cdn.ink.sapo.pt/3.1.0/js/ink-all.min.js"></script>
 
     
     </head>
@@ -195,17 +195,17 @@
 
 <p><a href="http://shibboleth.internet2.edu/">Shibboleth</a> is one of the underpinnings of <span class="podium">sapo</span>’s authentication and authorization infrastructure (both internal and <a href="http://id.sapo.pt">external</a>).</p>
 
-<p>We contributed to the <a href="http://shibboleth.internet2.edu/">Shibboleth</a> SP by adding support for <code class="highlighter-rouge">memcached</code> session storage and <code class="highlighter-rouge">FastCGI</code>, which makes it easier for us to make available our <span class="podium">sapo</span> <a href="http://id.sapo.pt">ID</a> service to our entire network of partner sites.</p>
+<p>We contributed to the <a href="http://shibboleth.internet2.edu/">Shibboleth</a> SP by adding support for <code class="language-plaintext highlighter-rouge">memcached</code> session storage and <code class="language-plaintext highlighter-rouge">FastCGI</code>, which makes it easier for us to make available our <span class="podium">sapo</span> <a href="http://id.sapo.pt">ID</a> service to our entire network of partner sites.</p>
 
 <h3 id="miscellaneous-odds-and-ends">Miscellaneous <small>odds and ends</small></h3>
 
 <p>We also submitted (and update as necessary) a few patches for other projects like</p>
 
 <ul>
-  <li><code class="highlighter-rouge">libmemcached</code></li>
+  <li><code class="language-plaintext highlighter-rouge">libmemcached</code></li>
   <li><a href="http://sourceware.org/bugzilla/show_bug.cgi?id=5541">libc</a></li>
-  <li>The <code class="highlighter-rouge">MySQL</code> JDBC connector</li>
-  <li><code class="highlighter-rouge">openid4java</code></li>
+  <li>The <code class="language-plaintext highlighter-rouge">MySQL</code> JDBC connector</li>
+  <li><code class="language-plaintext highlighter-rouge">openid4java</code></li>
   <li><a href="https://code.djangoproject.com/ticket/14032">Django</a></li>
   <li>Tomcat</li>
   <li>LiveJournal</li>
